@@ -47,7 +47,6 @@ $(document).ready(function(){
 </script>
 <script> 
 
-
  $(document).ready(function(){
         $("#titulli").click(function(){
             $("#lista").animate({
