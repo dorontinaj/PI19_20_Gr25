@@ -7,7 +7,7 @@
     <title>Shoqata Alumni|Welcome</title>
     <!-- Insertimi i ikones(logos) ne title bar -->
     <link rel = "shortcut icon" type = "image/png" href = "llogoja.png">
-    <link rel="stylesheet"  href="stylesheet.css">
+    <link rel="stylesheet"  href="alumni.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
 $(document).ready(function(){
