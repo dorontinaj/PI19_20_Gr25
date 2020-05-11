@@ -27,12 +27,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["email"])) {
     $emailErr = "Email is required";
   } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
+    class customException extends Exception {
+    public function errorMessage() {
+      //error message
+      $errorMsg = 'Error on line '.$this->getLine().' in '.$this->getFile()
+      .': <b>'.$this->getMessage().'</b> nuk eshte nje email adrese valide!';
+      return $errorMsg;
     }
   }
+  
+  $email = "someone@example...com";
+  
+  try {
+    //check if
+    if(filter_var($email, FILTER_VALIDATE_EMAIL) === FALSE) {
+      //throw exception if email is not valid
+      throw new customException($email);
+    }
+  }
+  
+  catch (customException $e) {
+    //display custom message
+    echo $e->errorMessage();
+  }
+}
     
   if(!empty($_POST["password"]) && ($_POST["password"] == $_POST["confirmpassword"])) {
     $password = test_input($_POST["password"]);
