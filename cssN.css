@@ -1,0 +1,260 @@
+/*Stilizimi i pergjithshem i tekstit*/
+h1,h2,nav
+{
+	font-family: "Trebuchet MS",Tahoma,sans-serif;
+}
+body 
+{
+	font-family: Georgia, sans-serif;
+	font-size: 100%;
+	background-color: lightgray;
+}
+/*Stilizimi i hiperlinks*/
+a:link
+{
+	font-weight: bold;
+	color: white;
+}
+a:visited
+{
+	color: white;
+}
+a:hover
+{
+	background-color: #2D3E45 ;
+	color: #98A9B0;
+}
+/* Fillimi i Stilizimit te Header-it*/
+
+header
+{
+	background-color: #2D3E45;
+	width: 100%;
+	height: 200px;
+	margin-top: 0%;
+	position: static;
+}
+header nav
+{
+	background-color: #1A292E;
+	padding: 0.2% 0 0.2% 0;
+	list-style: none;
+	display: inline;
+}
+header nav a
+{
+	padding: 0.25em;
+	text-decoration: none;
+}
+header h1
+{	margin-top:-1%;
+	font-size: 165%;
+	color: white;
+}
+header h1 span
+{
+	color: white;
+}
+header h2
+{	margin-top:-8%;
+
+	font-size: 80%;
+	color: #98A9B0;
+}
+nav#mainMenu
+{
+	background-color: #1A292E;
+	font-size: 100%;
+	text-align: left;
+	color: #98A9B0;
+	display: inline-block;
+	width: 100%;
+	margin-bottom:1%;
+}
+nav#mainMenu div{
+	width:40%;
+	float: left;
+	margin:0.1% 0.1%;
+} 
+nav ol li{
+	 list-style: none; 
+}
+nav ul li
+{	
+	 list-style: none; 
+	
+	font-size:120%; 
+	
+	float:left;
+	display:inline;
+	padding: 0 10% 0 10%;
+	
+}
+#mainMenu .search-container {
+  float: right;
+}
+#mainMenu input[type=text] {
+    
+  width: 50%;
+  box-sizing: border-box;
+  border:none;
+  border-radius:10px;
+  font-size: 100%;
+  background-color: #2D3E45;
+  padding:2% 4%;
+  margin: 2% 20%;
+  
+  transition: 1s;
+  outline: none;
+  float: right;	
+  height: 15px;
+  color: #98A9B0;
+  
+  background-image: url('http://pixsector.com/cache/e7836840/av6584c34aabb39f00a10.png');
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: right;
+  
+  }
+#mainMenu input[type=text]:focus {
+  border: 2% solid #555;
+  width: 80%;
+}
+ header #header{
+	margin-top:0;
+} 
+nav#secondaryMenu
+{
+	display: inline;
+	background-color: #2D3E45;
+	font-size: 110%;
+	text-align: right;
+	color: #98A9B0;
+	margin-top: 5%;
+}
+
+#second1{
+	width:34%;
+	display:inline;
+	float:left;
+	text-align: left;
+	font-size: 110%;
+	margin-left:1%;
+}
+#second2{
+	width:66%;
+	display:inline;
+	margin-right:1%;
+	text-align: right;
+	font-size: 110%;
+	
+#second1 h2
+{
+	font-size: 30px;
+}	
+}
+/*  } Fundi i Stilizimit te Header-it   */
+
+
+/* Fillimi i stilizimit te lajemeve dytesore { */
+.lajmetdytesore
+{
+	
+width:100%;
+padding:80px 0px;
+background-color: #ccc;
+overflow:hidden; 
+
+}
+
+.lajmetdytesore h3
+{
+
+	font-weight:400;
+	font-family:Lato;
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-transform: uppercase;
+	color:#1A292E;
+	
+}
+.lajmetdytesore article{
+width:27%;
+float: left;
+margin:10px 3%;
+}
+.lajmetdytesore li{
+	list-style-type: none; 	
+}
+
+.lajmetdytesore p
+{
+
+	font-weight:400;
+	font-family:Lato;
+	font-size: 14px;
+	text-align: left;
+	padding-bottom: 10px;
+	color:#1A292E;
+}
+.lajmetdytesore h5
+{
+	background-color:#2D3E45;
+	text-decoration:none;
+	padding:9px 9px 9px 9px;
+	width:19%;
+	color:lightgray;
+	height:6%;
+	 margin:1%;
+}
+.lajmetdytesore h5:hover{
+	background-color:darkred;
+	 width:74.5%;
+	  transition: 1s;
+	  height:6%;
+	 margin:1%;
+	 
+}
+.lajmetdytesore a{
+	color: #1A292E;
+	text-decoration:none;
+}
+.lajmetdytesore .date{
+	color: #1A292E;
+	margin-left:-11%;
+}
+/* Fundi i stilizimit te lajemeve dytesore { */
+
+.pagination {
+  display: inline-block;
+	margin-top:10%;
+	margin-right:3%;
+	margin-left:3%;
+}
+
+.pagination a {
+  color:#1A292E;
+ float:left;
+  padding: 8px 16px;
+  text-decoration: none;
+  display:center;
+}
+.pagination a:hover{
+	border-radius:50%;
+}
+#result{
+	color:#1A292E;
+}
+div#ora
+ {
+ height:35px;
+ width:115px;
+ font-size:27px;
+ box-shadow:1px 5px 10px black;
+ margin-left:2%;
+ color:black;
+ border-radius:20px;
+ }
+
