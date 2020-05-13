@@ -1,7 +1,11 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
 <link rel="stylesheet" href="regjistrohu.css" type="text/css">
+ <!-- Insertimi i ikones(logos) ne title bar -->
+<link rel = "shortcut icon" type = "image/png" href = "llogoja.png">
+<title>Regjistrohu</title>
 <style>
 .error {color: #ab0e18;}
 </style>
@@ -9,54 +13,37 @@
 <body>
 
 <?php
-// define variables and set to empty values
+// definimi variablave dhe inicializimi si empty stringje
 $nameErr = $emailErr = $passwordErr = $confirmpasswordErr = "";
-$name = $email = "";
+$name = $email = $password = $confirmpassword= "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["username"])) {
     $nameErr = "Name is required";
   } else {
     $name = test_input($_POST["username"]);
-    // check if name only contains letters and whitespace
+    // Kontrolla se a e permban emri numra dhe whitespace.
     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
       $nameErr = "Only letters and white space allowed";
     }
   }
-  
+
   if (empty($_POST["email"])) {
     $emailErr = "Email is required";
   } else {
-    class customException extends Exception {
-    public function errorMessage() {
-      //error message
-      $errorMsg = 'Error on line '.$this->getLine().' in '.$this->getFile()
-      .': <b>'.$this->getMessage().'</b> nuk eshte nje email adrese valide!';
-      return $errorMsg;
+    $email = test_input($_POST["email"]);
+    // kontrollo se a eshte email valid
+    $regex="/^[a-zA-Z\d\._]+@[a-zA-Z\d\._]+\.[a-zA-Z\d\.]{2,}+$/";
+    if (!preg_match($regex,$email)) {
+      $emailErr = "Invalid email format";
     }
   }
-  
-  $email = "someone@example...com";
-  
-  try {
-    //check if
-    if(filter_var($email, FILTER_VALIDATE_EMAIL) === FALSE) {
-      //throw exception if email is not valid
-      throw new customException($email);
-    }
-  }
-  
-  catch (customException $e) {
-    //display custom message
-    echo $e->errorMessage();
-  }
-}
-    
+
   if(!empty($_POST["password"]) && ($_POST["password"] == $_POST["confirmpassword"])) {
     $password = test_input($_POST["password"]);
     $confirmpassword = test_input($_POST["confirmpassword"]);
-    if (strlen($_POST["password"]) <= '8') {
-        $passwordErr = "Your Password Must Contain At Least 8 Characters!";
+    if (strlen($_POST["password"]) <= '6') {
+        $passwordErr = "Your Password Must Contain At Least 6 Characters!";
     }
     elseif(!preg_match("#[0-9]+#",$password)) {
         $passwordErr = "Your Password Must Contain At Least 1 Number!";
@@ -80,21 +67,19 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
-
 ?>
-
 <div class="body-content">
   <div class="module">
     <h1>Regjistrohu</h1>
     <form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
       <div class="alert alert-error"></div>
-      <input type="text" placeholder="Emri" name="username"  />
+      <input type="text" placeholder="Emri" name="username" value="<?= $name?>" />
       <span class="error">* <?php echo $nameErr;?> </span><br><br>
-      <input type="email" placeholder="Email" name="email" />
+      <input type="text" placeholder="Email" name="email" value="<?= $email ?>"/>
       <span class="error">* <?php echo $emailErr;?> </span><br><br>
-      <input type="password" placeholder="Password" name="password" autocomplete="new-password" />
+      <input type="password" placeholder="Password" name="password" autocomplete="new-password" value="<?= $password?>"/>
       <span class="error">* <?php echo $passwordErr;?> </span><br><br>
-      <input type="password" placeholder="Konfirmoni Password-in" name="confirmpassword" autocomplete="new-password"  />
+      <input type="password" placeholder="Konfirmoni Password-in" name="confirmpassword" autocomplete="new-password" value="<?= $confirmpassword?>" />
       <span class="error">* <?php echo $confirmpasswordErr;?> </span> <br><br>
       <div class="avatar"><label>Select your profile: </label><input type="file" name="avatar" accept="image/*" /></div>
       <input type="submit" value="Regjistrohu" name="register" class="btn btn-block btn-primary" />
