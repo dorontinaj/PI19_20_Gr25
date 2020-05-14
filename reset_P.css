@@ -1,0 +1,9 @@
+/*html,body,header,footer,div,article,section,p,h1,h2,h3,ul,li,ol,nav,figure,figcaption,img,br, a, hr*/
+html, body, header,p,a,h1,ul,li,nav,div
+{
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align: baseline; 
+	font-size: 100%;
+}
