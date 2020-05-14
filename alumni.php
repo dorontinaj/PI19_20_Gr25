@@ -9,6 +9,9 @@
     <link rel = "shortcut icon" type = "image/png" href = "llogoja.png">
     <link rel="stylesheet"  href="alumni.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+     .error {color: #ab0e18;}
+    </style>
     <script>
 $(document).ready(function(){
   $("p").dblclick(function(){
@@ -46,6 +49,7 @@ $(document).ready(function(){
 });
 </script>
 <script> 
+
 
  $(document).ready(function(){
         $("#titulli").click(function(){
@@ -277,13 +281,17 @@ function showSlides() {
       Iniciativa e donacioneve brenda Rrjetit Alumni të Universitetit të Prishtinës “Hasan Prishtina“, synon grumbullimin e të mirave financiare duke promovuar vullnetarizmin, me qellim të realizimit të objektivave nga komponentat:
     </p>
     <nav>
-      <ul>
-       <li><strong>Bursa për të diplomuarit</strong></li>
-        <li><strong>Pasurim bibliotekarë</strong></li>
-        <li><strong>Vizita studimore</strong></li>
-        <li><strong>Vizita rekreative (Kampe dhe udhetime me qellim të rrjetizimit</strong></li>
-        <li><strong>Organizimin e aktiviteteve me karakter promocional të Rrjetit Alumni, etj...</strong></li>
-      </ul>
+    <!-- preg_split ne php -->
+      <?php
+      $pattern = "/[\,]+/";
+      $sometext="Bursa për të diplomuarit, Pasurim bibliotekarë, Vizita studimore, Vizita rekreative (Kampe dhe udhetime me qellim të rrjetizimit),
+      Organizimin e aktiviteteve me karakter promocional të Rrjetit Alumni etj...";
+      $parts = preg_split($pattern, $sometext);
+      // Loop through parts array and display substrings
+      foreach($parts as $part){
+        echo "<strong>$part</strong></br>";
+      }
+      ?>
     </nav>
     <p>
     Kjo iniciativë udhëheqët nga Bordi i Rrjetit Alumni të Universitetit të Prishtinës “Hasan Prishtina “, i cili ka për qëllim që të mirën financiare t’a përkthej në të mirë sociale për studentët, të diplomuarit, kampusin universitar dhe vendin tonë.
@@ -292,33 +300,42 @@ Universiteti i Prishtinës “ Hasan Prishtina “ ka luajtur një rol të rënd
 
 Bujaria juaj do të ndihmojë në përmirësimin e jetës së të diplomuarve dhe studentëve, si dhe do të rris cilësinë e sherbimeve të Rrjetit Alumni.
 
-<form>
-  <label for="mail">Per me shume informata, shenoni email-in tuaj:</label>
-  <input type="email" id="mail" name="text">
-  <button id="sub" name="submit">Submit</button>
-  <?php if(isset($show)){echo $show;}?>
-</form>
+    </p>
+
 <?php
-$regex="/^[a-zA-Z\d\._]+@[a-zA-Z\d\._]+\.[a-zA-Z\d\]";
-if(isset($_POST['submit'])){
-  if(preg_match($regex,$_POST['text'])){
-    $show="<span style='color:green'>Correct</span>";
-  }
-  else{
-    $show="<span style='color:red>Incorrect</span>";
-  }
-
-  }
-  if(isset($show)){
-    echo $show;
+$email="";
+$emailErr="";
+try{
   
+if (empty($_POST["email"])) {
+  $emailErr = "Email is required";
+} else {
+  $email = test_input($_POST["email"]);
+  // check if e-mail address is well-formed
+  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $emailErr = "Invalid email format";
   }
-
+}
+}
+catch(Exception $e)
+{
+    echo "Sorry something went wrong!";
+}
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
 ?>
-<form>
-<label for="phone">Per me shume informata, shenoni numrin e tel:</label>
-<input type="tel" id="phone" name="phone">
-<button id="sub" onclick="phonenumber(phone)">Submit</button>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
+  <label for="mail">Per me shume informata, shenoni email-in tuaj:</label>
+  <input type="text" id="mail" name="email" >
+  <input type="submit" value="Submit" id="sub" name="submit">
+  <span class="error">* <?php echo $emailErr;?> </span><br>
+  <label for="phone">Per me shume informata, shenoni numrin e tel:</label>
+  <input type="tel" id="phone" name="phone">
+  <input type="submit" id="sub" onclick="phonenumber(phone)">
 </form>
 <script>
 function phonenumber(phone) {
@@ -345,7 +362,17 @@ function phonenumber(phone) {
 </section>
 
 <section id="tekst">
-     <p id="fsheh">Platforma e e-Karrierës dhe Alumni është mbështetur nga Transformational Leadership Program – Scholarships and Partnerships, që financohet nga USAID dhe Ministria e Arsimit, Shkencës dhe Teknologjisë dhe implementohet nga World Learning.
+     <p id="fsheh">Platforma e e-Karrierës dhe Alumni është mbështetur nga 
+     <!-- preg_replace ne php -->
+    <?php 
+    $pattern = "/\s/";
+    $replacement = "-";
+    $text="Transformational\nLeadership\tProgram Scholarships";
+     // Replace spaces, newlines and tabs
+    echo preg_replace($pattern, $replacement, $text);
+    
+    ?>
+    and Partnerships, që financohet nga USAID dhe Ministria e Arsimit"Shkencës dhe Teknologjisë dhe implementohet nga World Learning."
  </p>
 </section>
 
