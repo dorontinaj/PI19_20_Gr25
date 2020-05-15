@@ -14,10 +14,27 @@
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
          <script src="jquery-1.11.2.min.js"></script>
 	 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-         <script src="projekti.js" type="text/JavaScript"></script>
+         
+<!-- Pjesa shtese per validim me ajax, funksioni per sugjerime -->
+        <script>
+        function showHint(str) {
+        if (str.length == 0) {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+        } else {
+         var xmlhttp = new XMLHttpRequest();
+         xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("txtHint").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "searchhint.php?q=" + str, true);//emri faqes qe referon searchhint.php
+    xmlhttp.send();
+  }
+}
+        </script>
+
 <script> 
-
-
  $(document).ready(function(){
         $(".flip").click(function(){
             $(".panel").animate({
@@ -54,16 +71,17 @@ function initMap() {
        	 </li>
 		   </ol></div>
              <div class="search-container">
-              <form class="example" action="/action_page.php">
-               <input type="text" placeholder="Kerkoni ketu..." name="search">
-              </form>
+              <!-- Pjesa e ndryshuar qe validohet me js dhe ajax-->
+			 <form action="searchpage.php" class="example" method="post">
+             <input type="text" id="search" name="fname" placeholder="Kerkoni ketu" onkeyup="showHint(this.value)">
+             <span id ="txtHint">Sugjerime:</span>
+			 </form>
              </div>  
       </nav>   
  <nav id="secondaryMenu">
  <article id="second1">
  <div id="second1">
       <h1> <span>Universiteti</span></h1> <br>
-      <h2> Ballina </h2>
       
      </div>
 	</article>
