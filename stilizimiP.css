@@ -130,7 +130,7 @@ nav#secondaryMenu
 	
 	background-color: #2D3E45;
 	font-size: 110%;
-	text-align: right;
+	text-align: left;
 	margin-top:5%;
 	color: #98A9B0;
 }
@@ -222,7 +222,7 @@ section figure img
 	background-color:white;
 	margin-left:2%;
 	margin-right:2%;
-	margin-top:-18%;
+	margin-top:-250px;
 	padding-top:0.5%;
 	padding-bottom:0%;
 	margin-bottom:1%;
@@ -443,6 +443,10 @@ margin-top:1%;
 	text-align:center;
 	margin-left:3%;
 	font-size:120%;
+}
+
+#part25 {
+	padding-bottom:17%;
 }
 
 .right {
