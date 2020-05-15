@@ -84,7 +84,7 @@ function initMap() {
         		 <div class="textbox">
          <figure id="figura">
 
-           <img src="libra1.jpg" alt="Books" class="center" width="100%" height="100%">
+           <img src="photos/libra1.jpg" alt="Books" class="center" width="100%" height="100%">
 		    <div class="text-block">
 			<h3>Historia e Universitetit</h3>
 		   <p>Institucioni i parë i arsimit të lartë në Kosovë ishte Shkolla e Lartë Pedagogjike në Prishtinë (1958). Në fillim kishte këto grupe mësimore: Grupi i Gjuhës dhe i Letërsisë Shqipe, Grupi i Gjuhës dhe i Letërsisë Serbokroate, Grupi i Biologjisë, i Gjeografisë dhe i Kimisë, Grupi i BAT-it dhe i Fizikës, Grupi i Matematikës dhe i Fizikës. </p>
@@ -152,7 +152,7 @@ function initMap() {
 	<div id="part2.1">
 	<h3>Shiko universitetin</h3>
 	<div class="line"></div>
-	<img src="imagesP/fiek.jpg">
+	<img src="photos/fiek.jpg">
 	<p>Kampusi ka një pozicion vërtet të mirë në qender te Prishtinës me nje hapsir mjaft te madhe ku jane te vendosura shumica e fakulteteve gjithashtu ne qender te kampusit eshte e vendosur bibloteka kombetare.Kjo bibliotekë është institucioni më i lartë bibliotekar në Kosovë i themeluar nga Parlamenti.  </p>
 	<br>
 	<a href="#">Shiko me shume  <i class="arrow right"></i></a>
@@ -165,11 +165,11 @@ function initMap() {
 	<h3>Aktivitete sportive</h3>
 	<div class="line"></div>
 	<h5>Dec 21,2019: <span style="color:#2D3E45">Volejboll</span></h5>
-		<img src="volejboll.jpg">
+		<img src="photos/volejboll.jpg">
 		<p>Universiteti i Prishtinës “Hasan Prishtina” ka triumfuar në Universiadën e Dubrovnikut, në disiplinën e vjolejbollit për femra, e mbajtur në Kroaci.</p>
 		<div class="line2"></div>
 	<h5>Jan 2,2020: <span style="color:#2D3E45">Basketboll</span></h5>
-		<img src="basketboll.jpg">
+		<img src="photos/basketboll.jpg">
 		<p>Prishtina dominon në basketbollin vendor, ngjarjet e vitit 2019 në Kosovë</p>
 		<a href="#">Shiko te gjitha  <i class="arrow right"></i></a>
 		</div>
@@ -193,13 +193,13 @@ function initMap() {
 	<div id="part24">
 	
 	<article><h3>Studentet e Diplomuar</h3><div class="line"></div>
-		<img src="diploma.jpg">
+		<img src="photos/diploma.jpg">
 	</article>
 	<article><h3>Mbledhja e Studenteve</h3><div class="line"></div>
-		<img src="mbledhja.jpg">
+		<img src="photos/mbledhja.jpg">
 	</article>
 	<article><h3>Ligjeratat e Studenteve</h3><div class="line"></div>
-		<img src="ligjerata.jpg">
+		<img src="photos/ligjerata.jpg">
 	</article>
 	</div>
 	</div>
