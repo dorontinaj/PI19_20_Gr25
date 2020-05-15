@@ -185,7 +185,7 @@ function initMap() {
 	<div class="line2"></div>
 	<h5>NJOFTIM: FTESË PËR PJESËMARRJE NË PANAIRIN E EDUKIMIT "STUDIONI NË FRANCË"</h5>
 	<h4>Dec 21,2019: </h4>
-	<p>Universiteti i Prishtinës “Hasan Prishtina“ ka nderin t’ju ftojë që të merrni pjesë në edicionin e 2-të të Panairit të Edukimit "Studioni në Francë" 2019. Panairi organizohet me datë 30 tetor 2019 (e mërkurë, nga ora: 09:00 - 17:00 dhe do të mbahet në Hollin e Bibliotekës Kombëtare të Kosovës "Pjetër Bogdani" . 
+	<p id="part25">Universiteti i Prishtinës “Hasan Prishtina“ ka nderin t’ju ftojë që të merrni pjesë në edicionin e 2-të të Panairit të Edukimit "Studioni në Francë" 2019. Panairi organizohet me datë 30 tetor 2019 (e mërkurë, nga ora: 09:00 - 17:00 dhe do të mbahet në Hollin e Bibliotekës Kombëtare të Kosovës "Pjetër Bogdani". 
 </p></div>
 	</article>
 	
