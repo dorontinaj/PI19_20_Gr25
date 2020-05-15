@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -11,13 +10,14 @@
 </style>
 </head>
 <body>
-
 <?php
 // definimi variablave dhe inicializimi si empty stringje
 $nameErr = $emailErr = $passwordErr = $confirmpasswordErr = "";
 $name = $email = $password = $confirmpassword= "";
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  function test_input($str){
+    return trim(htmlspecialchars($str));
+}
   if (empty($_POST["username"])) {
     $nameErr = "Name is required";
   } else {
@@ -27,7 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $nameErr = "Only letters and white space allowed";
     }
   }
-
   if (empty($_POST["email"])) {
     $emailErr = "Email is required";
   } else {
@@ -38,7 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $emailErr = "Invalid email format";
     }
   }
-
   if(!empty($_POST["password"]) && ($_POST["password"] == $_POST["confirmpassword"])) {
     $password = test_input($_POST["password"]);
     $confirmpassword = test_input($_POST["confirmpassword"]);
@@ -57,15 +55,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 elseif(!empty($_POST["password"])) {
     $confirmpasswordErr = "Please Check You've Entered Or Confirmed Your Password!";
-} else {
+}
+elseif($_POST["password"] != $_POST["confirmpassword"]) {
+    $confirmpasswordErr="The passwords do not match!";
+}
+else {
      $passwordErr = "Please enter password   ";
 }
+if(empty($nameErr) && empty($emailErr) && empty($passwordErr)) {
+  //--------------------------------------------------------------------------------------//
+  //Database
+  //Krijimi i lidhjes
+  $con = mysqli_connect('localhost','root','Eliraa323311-');
+  if(!$con)
+  {
+      echo 'Nuk jeni lidhur me serverin!';
+  }
+  if(!mysqli_select_db($con,'regjistrimi'))
+  {
+      echo "Databaza nuk eshte selektuar me rregull";
+  }
+  $Emri = $_POST['username'];
+  $Email = $_POST['email'];
+  $Fjalekalimi = $_POST['password'];
+  //Krijimi i Databazes
+  $sql='CREATE DATABASE regjistrimi';
+  //Krijimi i Tabeles
+  $sql='CREATE TABLE users(id INT(11)UNSIGNED AUTO_INCREMENT PRIMARY KEY,username VARCHAR(255) , UNIQUE(email) VARCHAR(255) ,password VARCHAR(255));';
+  //INSERTIMET
+  $sql = "INSERT INTO perdoruesit (username,email,password) VALUES ('$Emri','$Email','$Fjalekalimi')";
+  $rez = mysqli_query($con,$sql);
+  //UPDATE
+  if(!$rez){
+      echo "<h3>Nuk jeni regjistruar me sukses. Emaili i shenuar egziston,ju lutem shenoni tjeter email!</h3>";
+  }
+  else{
+       echo "<h3>Jeni regjistruar me sukses. Klikoni <a href='Kycu.php'><b>ketu</b></a> per tu kycur </h3>";
+  }
+  exit();
 }
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
 }
 ?>
 <div class="body-content">
@@ -81,9 +109,7 @@ function test_input($data) {
       <span class="error">* <?php echo $passwordErr;?> </span><br><br>
       <input type="password" placeholder="Konfirmoni Password-in" name="confirmpassword" autocomplete="new-password" value="<?= $confirmpassword?>" />
       <span class="error">* <?php echo $confirmpasswordErr;?> </span> <br><br>
-      <div class="avatar"><label>Select your profile: </label><input type="file" name="avatar" accept="image/*" /></div>
       <input type="submit" value="Regjistrohu" name="register" class="btn btn-block btn-primary" />
-    
     </form>
   </div>
 </div>
