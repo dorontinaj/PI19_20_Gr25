@@ -16,11 +16,6 @@
       margin-top: 50px;
   }
   
-  #registered img {
-      margin-bottom: 0px;
-      width: 100px;
-      height: 100px;
-  }
   
   #registered span {
       clear: both;
@@ -29,10 +24,6 @@
   
   img {
       margin-bottom: 20px;
-  }
-  
-  .avatar {
-      margin: 10px 0 20px 0;
   }
   
   .module{
