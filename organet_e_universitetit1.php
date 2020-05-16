@@ -110,15 +110,21 @@ else if (hours > 18 || hours < 6){
 	</section>
 	<hr class="hr"/>
 	<section class="sondazh">
+
+
+
 	<h3>
 		<?php 
 
-		$fjalia="Sondazh";
+		$fjalia = "Sondazh";
 		echo $fjalia, "\n";
         echo strlen($fjalia);
 
 	 	?>
 	 </h3>
+
+
+
 	<h4><b>Cilat gjuhë të huaja flisni?</b><h4>
 			
 			<form style="font-size:15px; color:#601A36">
@@ -150,7 +156,22 @@ function drop(ev) {
 </script>
 </head>
 <body>
-<p>Lëviz foton në mes të dy div elementeve.</p>
+
+      
+
+<p>
+	<?php
+
+		$fjalia =  "Lëviz foton në mes të dy div elementeve.";
+		echo $fjalia, "<br>";
+        $zv = str_replace('dy','tre',$fjalia);
+        print_r($zv);
+
+	?>
+</p>
+
+
+
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
   <img src="universiteti.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
 </div>
