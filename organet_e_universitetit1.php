@@ -12,9 +12,6 @@
          <script src="jquery-1.11.2.min.js"></script>
 		 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
 <script> 
  $(document).ready(function(){
         $(".flip").click(function(){
@@ -26,12 +23,9 @@
     </script>
    
  
-
 	
 </head>
-
 <body onload="startTime()">
-
 <header> <div id="header">
 	<nav id="mainMenu">
 		 <div><ol>
@@ -51,7 +45,6 @@
       <h2> Organet e Fakultetit </h2>
   </div>
 </article>
-
 <article id="second2">
 			<a class="a" href="projekti.html"  target="_blank">BALLINA</a>
 			<a class="a" href="organet_e_universitetit1.html"  target="_blank">ORGANET E UNIVERSITETIT</a>
@@ -63,12 +56,10 @@
 	</nav>
 	</div>
 </header>
-
 	<div id="ora" style="padding-left:10px;">
 	<script type="text/javascript">
 var now = new Date();
 var hours = now.getHours();
-
 document.write('Ora: ', hours);
 document.bgColor="#2D3E45";
 //6-18 dite
@@ -80,7 +71,6 @@ else if (hours > 18 || hours < 6){
  document.write ('<body style="background-color: #7D7D7D">');
 }
 </script></div>
-
 <section>
 	<div class="header_1">
 		<div class="heading_1">
@@ -118,12 +108,17 @@ else if (hours > 18 || hours < 6){
 		</div>
 	</div>
 	</section>
-
 	<hr class="hr"/>
 	<section class="sondazh">
+	<h3>
+		<?php 
 
-	<h3>Sondazh</h3>
+		$fjalia="Sondazh";
+		echo $fjalia, "\n";
+        echo strlen($fjalia);
 
+	 	?>
+	 </h3>
 	<h4><b>Cilat gjuhë të huaja flisni?</b><h4>
 			
 			<form style="font-size:15px; color:#601A36">
@@ -133,27 +128,20 @@ else if (hours > 18 || hours < 6){
 			<input type="checkbox" name="text" value="Jashte shtetit">Frengjisht<br>
 			
 		</form>
-
 	<h4><b>Ku deshironi t'i vazhdoni studimet e larta?</b><h4>
 	<form style="font-size:15px; color:#601A36">
 			<input type="radio" name="text" value="Brenda shtetit">Brenda shtetit<br>
 			<input type="radio" name="text" value="Jashte shtetit">Jashtë Shtetit<br>
 			<input type=reset value="VOTO"  onClick="alert('Vota juaj &#235sht&#235 ruajtur!')" 
 			style="height:30px; width:65px; border-radius:10px; background:#601A36; color:white; font-weight:bold;font-size:12pt; font-family:Arial"  >  
-
-
-
 <div class="drag">
 <script>
-
 function allowDrop(ev) {
   ev.preventDefault();
 }
-
 function drag(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
 }
-
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
@@ -162,22 +150,14 @@ function drop(ev) {
 </script>
 </head>
 <body>
-
-
 <p>Lëviz foton në mes të dy div elementeve.</p>
-
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
   <img src="universiteti.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
 </div>
-
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 </div>
 	</section>
-
-
 </td>
-
-
 <td>
 <div class="table11">
 <section id="table">
@@ -195,7 +175,6 @@ function drop(ev) {
 				</ul>
 		</div>
 <hr>
-
 	<div class="heading_3">
 		<div class="name3">
 			<h2>POSTIMET E FUNDIT</h2>
@@ -208,7 +187,6 @@ function drop(ev) {
 						
 				</div>
 				</figure>
-
 					<div class="post_1">
 						<h6><a href="https://klankosova.tv/volejbollistet-e-up-se-fituese-te-universiades-se-dubrovnikut-ne-volejboll/">
                                      VOLEJBOLLISTET E UP-SË ,FITUESE TË UNIVERSIADËS SË DUBROVNIKUT NË VOLEJBOLL</a></h6>
@@ -221,7 +199,6 @@ function drop(ev) {
 						
 				</div>
 				</figure>
-
 						<div class="post_2">
 							<h6><a href="https://www.uni-pr.edu/page.aspx?id=2,4,984">UP-JA SHPËRBLEN ME MIRËNJOHJE STAFIN DHE STUDENTËT QË NDIHMUAN SHQIPËRINË PAS TËRMETIT</a></h6>
                             <span class="dataa">20/12/2019</span>
@@ -230,7 +207,6 @@ function drop(ev) {
 	</div>
 <hr>
  
-
 	<div class="heading_4">
 		<div class="name4">
 			<h2> VEGZA RELEVANTE</h2>
@@ -247,22 +223,16 @@ function drop(ev) {
 				<li><a href='https://www.summerschoolsineurope.eu/' target="_blank">Summer Schools in Europe</a></li>
 				<li><a href='http://dimtv-project.al/' target="_blank">DIMTV</a></li>
 			</ul>
-
-
 	</div>
-
-
 </section>
 </div>
 </td>
 </tr>
 </table>
 </div>
-
  
  <footer>
 <div id="footer">
-
 <nav id="mainFooter">
 <div class="flip"><div class="flip1">Kliko per t'i pare informacionet rreth nesh</div></div>
 <div class="panel">
@@ -274,9 +244,7 @@ function drop(ev) {
 	<th width="280">FACEBOOK</th>
     <th width="280">KONTAKTI</th>
 </tr>
-
 	</thead>
-
 <tbody>
 <tr>
 	<td>
@@ -311,11 +279,8 @@ Republika e Kosoves<br>
 Phone: +381 38 244 183<br>
 Fax: +381 38 244 187 <br>
 Email: <a class="a" href="rektorati@uni-pr.edu">rektorati@uni-pr.edu</a><br> 
-
-
 </address> 
 </li>
-
 </ul>
 </td>
 </tbody></table>
@@ -328,6 +293,5 @@ Copyright &copy 2013-All Rights Reserved-Domain Name</h6>
 </nav>
 </div>
 </footer>
-
 </body>
 </html>
