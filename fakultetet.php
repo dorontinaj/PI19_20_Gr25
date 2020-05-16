@@ -72,12 +72,12 @@ display:none;
 </article>
 <article id="second2">
 		
-			<a href="projekti.html"  target="_blank">BALLINA</a>
-			<a href="organet_e_universitetit1.html"  target="_blank">ORGANET E UNIVERSITETIT</a>
-			<a href="faqja.html"  target="_blank">FAKULTETET</a>
-			<a href="Lajme.html"  target="_blank">LAJME</a>
-			<a href="alumni.html"  target="_blank">ALUMNI</a>
-	                <a href="regjistrimi.html"  target="_blank">REGJISTROHU</a>
+			<a href="Projekti.php"  target="_self">BALLINA</a>
+			<a href="organet_e_universitetit1.php"  target="_self">ORGANET E UNIVERSITETIT</a>
+			<a href="fakultetet.php"  target="_self">FAKULTETET</a>
+			<a href="Lajme.php"  target="_self">LAJME</a>
+			<a href="alumni.php"  target="_blank">ALUMNI</a>
+	                <a href="regjistrohu.php"  target="_self">REGJISTROHU</a>
 		</article>
 	</nav>
 	</div>
