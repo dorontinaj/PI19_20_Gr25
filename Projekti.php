@@ -14,7 +14,7 @@
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
          <script src="jquery-1.11.2.min.js"></script>
 	 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-         
+
 <!-- Pjesa shtese per validim me ajax, funksioni per sugjerime -->
         <script>
         function showHint(str) {
@@ -33,8 +33,26 @@
   }
 }
         </script>
+		 <script> 
 
-<script> 
+								
+							  
+														  
+			   
+				
+											
+												  
+													   
+																		 
+	   
+	  
+																							   
+				   
+   
+ 
+				 
+
+		 
  $(document).ready(function(){
         $(".flip").click(function(){
             $(".panel").animate({
@@ -76,23 +94,24 @@ function initMap() {
              <input type="text" id="search" name="fname" placeholder="Kerkoni ketu" onkeyup="showHint(this.value)">
              <span id ="txtHint">Sugjerime:</span>
 			 </form>
-             </div>  
+             </div>   
       </nav>   
  <nav id="secondaryMenu">
  <article id="second1">
  <div id="second1">
       <h1> <span>Universiteti</span></h1> <br>
+    
       
      </div>
 	</article>
 	<article id="second2">
      
-	               <a href="projekti.html"  target="_blank">BALLINA</a>
-			<a href="organet_e_universitetit1.html"  target="_blank">ORGANET E UNIVERSITETIT</a>
-			<a href="faqja.html"  target="_blank">FAKULTETET</a>
-			<a href="Lajme.html"  target="_blank">LAJME</a>
-			<a href="alumni.html"  target="_blank">ALUMNI</a>
-	          	<a href="regjistrimi.html"  target="_blank">REGJISTROHU</a>
+	               <a href="projekti.php"  target="_blank">BALLINA</a>
+			<a href="organet_e_universitetit1.php"  target="_blank">ORGANET E UNIVERSITETIT</a>
+			<a href="fakultetet.php"  target="_blank">FAKULTETET</a>
+			<a href="Lajme.php"  target="_blank">LAJME</a>
+			<a href="alumni.php"  target="_blank">ALUMNI</a>
+	          	<a href="regjistrimi.php"  target="_blank">REGJISTROHU</a>
 	
 		   </article>
       </nav>
@@ -238,7 +257,7 @@ function initMap() {
 		<th width="280">TWITTER</th>	
 	<th width="280">INSTAGRAM</th>
 	<th width="280">FACEBOOK</th>
-    <th width="280">KONTAKTI</th>
+    <th id="kontakti" width="280">KONTAKTI</th>
 </tr>
 
 	</thead>
