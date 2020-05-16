@@ -34,25 +34,7 @@
 }
         </script>
 		 <script> 
-
-								
-							  
-														  
-			   
-				
-											
-												  
-													   
-																		 
-	   
-	  
-																							   
-				   
-   
- 
-				 
-
-		 
+	 
  $(document).ready(function(){
         $(".flip").click(function(){
             $(".panel").animate({
@@ -148,27 +130,34 @@ function initMap() {
 	<h3>Informacione ndihmese</h3>
 	  <div class="line"></div>
 	<ul>
-<a  href="https://www.uni-pr.edu/page.aspx?id=1,13"><li>Administrata Qendrore
-	<ol id="nest">
-	<li>Arsimin, kërkimet shkencore dhe punën artistike</li>
-<li> Administrimin e njohjes së studimeve</li>
-<li> Administrimin e personelit</li>
-	
-	</ol>
-	</li></a>
-	<a  href="https://uni-pr.edu/page.aspx?id=1,7"><li>Zyra per marrdhenie jashte vendit</li></a>
-	<a  href="https://uni-pr.edu/page.aspx?id=1,97"><li>Mesimdhenia dhe ceshtjet e studenteve</li></a>
-	<a  href="https://uni-pr.edu/page.aspx?id=1,80"><li>Kerkime dhe projekte te sponzorizuara</li></a>
-	<a  href="https://uni-pr.edu/page.aspx?id=1,66"><li>Qendra per zhvillim te karrieres
-	<ol id="nest">
-	<li>Informimi</li>
-<li> Këshillimi</li>
-<li>Trajnimet</li>
-	
-	</ol>
-	</li></a>
-	<a  href="https://uni-pr.edu/page.aspx?id=1,78"><li>Qendra per persosmeri ne mesimdhenie</li></a>
-	<a  href="https://uni-pr.edu/page.aspx?id=1,90"><li>Publikime shkencore</li></a>
+	<?php
+	class Myclass
+	{
+	private $font_size;
+	private $font_color;
+	private $string_value;
+	private $http_;
+	function __construct($font_size,$font_color,$string_value,$http_)
+	{
+	$this->font_size = $font_size;
+	$this->font_color = $font_color;
+	$this->string_value = $string_value;
+	$this->http_=$http_;
+	$this->customize_print();
+	}
+	function customize_print()
+	{
+	echo "<a href=".$this->http_." style=font-size:".$this->font_size.";color:".$this->font_color."; target=\"_blank\"><li>".$this->string_value."</li></a>";
+	}
+	}
+	$a = new MyClass('110%','#2D3E45','Administrata Qendrore','"https://www.uni-pr.edu/page.aspx?id=1,13"');
+	$b = new MyClass('110%','#2D3E45','Zyra per marrdhenie jashte vendit','"https://uni-pr.edu/page.aspx?id=1,7"'); 
+	$c = new MyClass('110%','#2D3E45','Mesimdhenia dhe ceshtjet e studenteve','"https://uni-pr.edu/page.aspx?id=1,97"');
+	$d = new MyClass('110%','#2D3E45','Kerkime dhe projekte te sponzorizuara','"https://uni-pr.edu/page.aspx?id=1,80"');
+	$e = new MyClass('110%','#2D3E45','Qendra per zhvillim te karrieres','"https://uni-pr.edu/page.aspx?id=1,66"');
+	$f = new MyClass('110%','#2D3E45','Qendra per persosmeri ne mesimdhenie','"https://uni-pr.edu/page.aspx?id=1,78"');
+	$g = new MyClass('110%','#2D3E45','Publikime shkencore','"https://uni-pr.edu/page.aspx?id=1,90"');
+	?>
 	
 	</ul>
 	</div><br>
