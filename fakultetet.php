@@ -172,7 +172,15 @@ else if (hours > 18 || hours < 6){
 		</div>
 		</div>
 	</div>
+	<div id="Sugjerime">
 
+		<form name="form" action="shkruaj.php" method="post" >
+		Sugjero: <input type="text" name="sugj"/><br/>	   		   
+		<button><a type="submit" href="shkruaj.php">Dergo</a></button>
+		<button><a type="submit" href="lexo.php">Lexo sugjerimet e deritashme</a></button>
+		</form>
+
+	</div>
 	<table id="Statistika" width="100%" height="100%" cellpadding="10">
 	    <tr colspan="5">
 		<td>
