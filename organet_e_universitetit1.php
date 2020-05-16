@@ -173,7 +173,7 @@ function drop(ev) {
 
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img src="universiteti.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+  <img src="photos/universiteti.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
 </div>
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 </div>
@@ -203,7 +203,7 @@ function drop(ev) {
 			<ul class="post">
 				<figure>
 				<div class="img1">
-					<a href="https://klankosova.tv/volejbollistet-e-up-se-fituese-te-universiades-se-dubrovnikut-ne-volejboll/"><img src="volej1.jpg" style="width:155px;height:125px;" alt="Volejbollistet e UP-së, fituese të Universiadës së         Dubrovni..." /></a> 
+					<a href="https://klankosova.tv/volejbollistet-e-up-se-fituese-te-universiades-se-dubrovnikut-ne-volejboll/"><img src="photos/volej1.jpg" style="width:155px;height:125px;" alt="Volejbollistet e UP-së, fituese të Universiadës së         Dubrovni..." /></a> 
 			     
 						
 				</div>
@@ -215,7 +215,7 @@ function drop(ev) {
 					</div>
 				<figure>
 				<div class="img2">
-					<a href="https://www.uni-pr.edu/page.aspx?id=2,4,984"><img src="images1.jpg" style="width:155px;height:125px;" alt="UP-ja shpërblen me mirënjohje stafin dhe studentët që ndihm..." /></a>
+					<a href="https://www.uni-pr.edu/page.aspx?id=2,4,984"><img src="photos/images1.jpg" style="width:155px;height:125px;" alt="UP-ja shpërblen me mirënjohje stafin dhe studentët që ndihm..." /></a>
 			    
 						
 				</div>
