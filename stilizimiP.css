@@ -292,29 +292,19 @@ width:17%;
 background-color: white;
 float: left;
 margin:1% 1.5%;
-color: #2D3E45;
 text-decoration:none;
 padding-top:1%;
 padding-left:2%;
 
 }
-#part1 ul{
-	color:#2D3E45;
-	text-align: left;
+#part1 ul{	text-align: left;
 	font-size:90%;
 	list-style:"\00BB \0020";
 	margin-top:5%;
 	 line-height: 1.6;
 }
-#part1 li{
-	color:#2D3E45;
-}
-#nest{
-	list-style:none;
-	text-decoration:none;
-	font-size:80%;
-	margin-left:-7%;
-}
+
+
 .line{
     width: 100%;
     border-bottom: 2px solid #2D3E45;
