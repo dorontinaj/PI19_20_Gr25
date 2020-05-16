@@ -4,8 +4,10 @@
   margin:0;
   padding:0;
 }
-
-
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 header 
 {
 
@@ -54,7 +56,7 @@ header a:hover
 #brendesia
 {
 min-height:600px;
-background-image: url("power.jpg");
+background-image: url("photos/power.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 
@@ -182,7 +184,7 @@ margin:10px 3%;
 width:100%;
 height:320px;
 background-color: #000;
-background-image:url('dare.jpg');
+background-image:url('photos/dare.jpg');
 background-size: 100%;
 
 }
@@ -191,7 +193,7 @@ background-size: 100%;
 width:100%;
 height:320px;
 background-color: #000;
-background-image:url('teach.jpg');
+background-image:url('photos/teach.jpg');
 background-size: 100%;
 
 }
@@ -200,7 +202,7 @@ background-size: 100%;
 width:100%;
 height:320px;
 background-color: #000;
-background-image:url('festo.jpg');
+background-image:url('photos/festo.jpg');
 background-size: 100%;
 
 }
@@ -401,7 +403,7 @@ margin:10px 3%;
 width:100%;
 height:220px;
 background-color: #000;
-background-image:url('soprano.jpg');
+background-image:url('photos/soprano.jpg');
 background-size: 100%;
 
 
@@ -411,7 +413,7 @@ background-size: 100%;
 width:100%;
 height:220px;
 background-color: #000;
-background-image:url('muza.jpg');
+background-image:url('photos/muza.jpg');
 background-size: 100%;
 
 }
@@ -420,7 +422,7 @@ background-size: 100%;
 width:100%;
 height:220px;
 background-color: #000;
-background-image:url('muzi.jpg');
+background-image:url('photos/muzi.jpg');
 background-size: 100%;
 
 }
