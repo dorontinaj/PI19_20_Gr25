@@ -1,8 +1,8 @@
 /*Header*/
  ul /*Global*/
 {
-	margin:0;
-	padding:0;
+  margin:0;
+  padding:0;
 }
 
 
@@ -29,26 +29,26 @@ font-size: 16px;
 
 header li
 {
-	display:inline;
-	padding: 0 20px 0 20px;
+  display:inline;
+  padding: 0 20px 0 20px;
 }
 header #branding
 {
-	float:left;
+  float:left;
 }
 header #branding h3
 {
-	margin:0;
+  margin:0;
 }
 header nav
 {
-	float:right;
-	margin-top:10px;
+  float:right;
+  margin-top:10px;
 }
 header a:hover
 {
-	color:darkred;
-	font-weight: bold;
+  color:darkred;
+  font-weight: bold;
 }
 /* section brendsia*/
 #brendesia
@@ -63,15 +63,15 @@ color:#ffffff;
 }
 #brendesia h2
 {
-	margin-top: 100px;
-	font-size: 40px;
-	margin-bottom: 10px;
+  margin-top: 100px;
+  font-size: 40px;
+  margin-bottom: 10px;
 
 }
 #brendesia p
 {
-	font-size:20px;
-	
+  font-size:20px;
+  
 }
 .shoqata
 
@@ -102,9 +102,9 @@ background-size: cover;
 .manipulimi
 {
 
-	width:88%;
-	margin:auto;
-	overflow:hidden;
+  width:88%;
+  margin:auto;
+  overflow:hidden;
 
 }
 
@@ -115,7 +115,7 @@ background-size: cover;
     line-height: 1.5;
     font:15px/1.5 Ariel,Helvetica,sans-serif;
     padding:0;
-	  overflow:hidden;
+    overflow:hidden;
     background-color: #000066;
     color:#ffffff;
     text-align:center;
@@ -134,7 +134,7 @@ button
   background-color:darkred; 
   border: none;
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -160,7 +160,7 @@ button
 }
 .lajme
 {
-	
+  
 width:100%;
 padding:80px 0px;
 background-color: #ccc;
@@ -169,7 +169,7 @@ overflow:hidden;
 }
 .lajme h2
 {
-text-align: center;	
+text-align: center; 
 }
 .lajme article{
 width:27%;
@@ -207,32 +207,32 @@ background-size: 100%;
 .lajme h3
 {
 
-	font-weight:400;
-	font-family:Lato;
-	font-size: 18px;
-	text-align: center;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	text-transform: uppercase;
-	color:#000;
+  font-weight:400;
+  font-family:Lato;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  color:#000;
 }
 .lajme p
 {
 
-	font-weight:400;
-	font-family:Lato;
-	font-size: 14px;
-	text-align: center;
-	padding-bottom: 10px;
-	color:#000;
+  font-weight:400;
+  font-family:Lato;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 10px;
+  color:#000;
 }
 .box
 {
 
-	width:80%;
+  width:80%;
   margin: auto;
-	margin-bottom: 50px;
-	overflow:hidden;
+  margin-bottom: 50px;
+  overflow:hidden;
 
 }
 
@@ -364,22 +364,22 @@ text-align:center;
 
 .donacionet
 {
-	margin-top: 0;
+  margin-top: 0;
     display: table-cell;
     margin-bottom: 30px;
 }
 
 #tekst
 {
-	font-family: 'Varela Round', sans-serif;
-	text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
   margin-bottom: 50px;
   margin-top:50px;
 
 }
 .alumni_1
 {
-	
+  
 width:100%;
 padding:80px 0px;
 
@@ -388,7 +388,7 @@ overflow:hidden;
 }
 .alumni_1 h2
 {
-text-align: center;	
+text-align: center; 
 }
 .alumni_1 article{
 width:27%;
@@ -472,3 +472,19 @@ background-size: 100%;
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
 }
+#er
+{
+  text-decoration: none;
+  color: white;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {font-size: 10px;}
