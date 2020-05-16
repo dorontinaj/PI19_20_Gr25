@@ -504,7 +504,7 @@ tbody
  text-align: left;
 }
 address {
-  display: inline-block;
+  display: block;
   font-style: italic;
   font-size: 15px;
   text-align: left;
@@ -549,13 +549,10 @@ background-color: #2D3E45;
 }
 .table2	 
 {
-	margin:0 10% 0 8%;		
-	
-text-align: center;
-		width: 90%;
+	margin:0 10% 0 10%;		  
 }
-#kontakti{
-padding-left:7%;
+th{
+	padding-left:33px;
 }
 .ikonat
 
@@ -566,9 +563,10 @@ padding-left:7%;
  span
  {
  	float: center;
-
  }
-
+.ikonat{
+	float:center;
+}
 
 
 address {
