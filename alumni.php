@@ -336,6 +336,10 @@ function test_input($data) {
   <label for="phone">Per me shume informata, shenoni numrin e tel:</label>
   <input type="tel" id="phone" name="phone">
   <input type="submit" id="sub" onclick="phonenumber(phone)">
+  <br><br>
+  <button><a type="submit" id="er" name="submit" href="Cookies.php" class="fundi" class="button button1">Gjenero Cookies</a></button>
+  <br>
+  <button><a type="submit" id="er" href="Sesionet.php" class="fundi" class="button button1">Gjenero Sesionet</a></button>
 </form>
 <script>
 function phonenumber(phone) {
@@ -394,4 +398,3 @@ function phonenumber(phone) {
   
 </body>
 </html>
-
