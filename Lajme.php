@@ -1,10 +1,10 @@
-<html manifest="example.appcache">
+<!DOCTYPE html>
 <head>
 	 <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width">
 			<title>Lajmet</title>					  
-	 <link rel="stylesheet" href="reset_P.css"/>
-	 <link rel="stylesheet" href="cssN.css"/>
+	 <link rel="stylesheet" href="css/reset_P.css"/>
+	 <link rel="stylesheet" href="css/cssN.css"/>
 	<link rel = "shortcut icon" type = "image/png" href = "llogoja.png">
 	<title>Lajmet</title>
 		 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -25,19 +25,7 @@
     });
 
     </script>
-	<script>function clickCounter() {
-  if(typeof(Storage) !== "undefined") {
-    if (sessionStorage.clickcount) {
-      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
-    } else {
-      sessionStorage.clickcount = 1;
-    }
-    document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-  }
-}</script>
-  
+	  
 	</head>
 	<body onload="startTime()">
 	<header> <div id="header">
@@ -56,17 +44,30 @@
  <article id="second1">
  <div id="second1">
       <h1> <span>Universiteti</span></h1> <br>
-      <h2> Lajmet </h2>
+      <?php   
+		class Myclass
+		{
+		 public $font_size ="120%";
+		 public $font_color = "white";
+		 public $string_name = "Lajme";
+		 public function customize_print()
+		 {
+		 echo "<p style=font-size:".$this->font_size.";color:".$this->font_color.";>".$this->string_name."</p>";
+		 }
+		}
+		$f = new MyClass;
+		echo $f->customize_print();
+		?>
   </div>
 </article>
 <article id="second2">
 		
-			<a href="projekti.html"  target="_blank">BALLINA</a>
-			<a href="organet_e_universitetit1.html"  target="_blank">ORGANET E UNIVERSITETIT</a>
-			<a href="faqja.html"  target="_blank">FAKULTETET</a>
-			<a href="Lajme.html"  target="_blank">LAJME</a>
-			<a href="alumni.html"  target="_blank">ALUMNI</a>
-			<a href="regjistrimi.html"  target="_blank">REGJISTROHU</a>
+			<a href="projekti.php"  target="_blank">BALLINA</a>
+			<a href="organet_e_universitetit1.php"  target="_blank">ORGANET E UNIVERSITETIT</a>
+			<a href="fakultetet.php"  target="_blank">FAKULTETET</a>
+			<a href="Lajme.php"  target="_blank">LAJME</a>
+			<a href="alumni.php"  target="_blank">ALUMNI</a>
+			<a href="regjistrimi.php"  target="_blank">REGJISTROHU</a>
 		</article>
 	</nav>
 	</div>
@@ -103,7 +104,7 @@ else if (hours > 18 || hours < 6){
 		</div>	
 		<div id="Lajmi1">
 			<figure>
-			<img src="volejboll1.jpg" width="90%" height="35%">
+			<img src="photos/volejboll1.jpg" width="90%" height="35%">
 			</figure>
 			
 			<ol>
@@ -128,7 +129,7 @@ else if (hours > 18 || hours < 6){
 		</div>	
 		<div class="Lajmi2">
 			<figure>
-			<img src="img2.jpg" width="90%" height="35%">
+			<img src="photos/img2.jpg" width="90%" height="35%">
 			</figure>
 			
 			<ol>
@@ -153,7 +154,7 @@ else if (hours > 18 || hours < 6){
 		</div>	
 		<div id="Lajmi3">
 			<figure>
-			<img src="img3.jpg" width="90%" height="35%">
+			<img src="photos/img3.jpg" width="90%" height="35%">
 			</figure>
 			
 			<ol>
@@ -185,7 +186,7 @@ else if (hours > 18 || hours < 6){
 		<div id="Lajmi1">
 			<figure>
 			<video width="90%" height="35%" controls>
-  <source src="video.mp4" type="video/mp4">
+  <source src="photos/video.mp4" type="video/mp4">
  
 </video>
 		
@@ -212,7 +213,7 @@ else if (hours > 18 || hours < 6){
 		</div>	
 		<div id="Lajmi2">
 			<figure>
-			<img src="img2.jpg" width="90%" height="35%">
+			<img src="photos/img2.jpg" width="90%" height="35%">
 			</figure>
 			
 			<ol>
@@ -238,7 +239,7 @@ else if (hours > 18 || hours < 6){
 		</div>	
 		<div id="Lajmi3">
 			<figure>
-			<img src="img3.jpg" width="90%" height="35%">
+			<img src="photos/img3.jpg" width="90%" height="35%">
 			</figure>
 			
 			<ol>
