@@ -252,6 +252,7 @@ function drop(ev) {
 </table>
 </div>
  
+		
  <footer>
 <div id="footer">
 <nav id="mainFooter">
