@@ -6,7 +6,7 @@
     <meta name="author" content="Elsa Nishori">
     <title>Shoqata Alumni|Welcome</title>
     <!-- Insertimi i ikones(logos) ne title bar -->
-    <link rel = "shortcut icon" type = "image/png" href = "llogoja.png">
+    <link rel = "shortcut icon" type = "image/png" href = "photos/llogoja.png">
     <link rel="stylesheet"  href="alumni.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style>
@@ -222,19 +222,19 @@ Pas këtij koncerti ajo u ftua për të kënduar si soliste me orkestrën Filarm
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="al1.jpg" style="width:100%">
+    <img src="photos/al1.jpg" style="width:100%">
     <div class="caption">Miresevini ne familjen Alumni!</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="al2.jpg" style="width:100%">
+    <img src="photos/al2.jpg" style="width:100%">
     <div class="caption">Ceremonia diplomimit</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="al3.jpg" style="width:100%">
+    <img src="photos/al3.jpg" style="width:100%">
     <div class="caption">Alumnit e Jacobs University</div>
   </div>
 
@@ -302,6 +302,8 @@ Bujaria juaj do të ndihmojë në përmirësimin e jetës së të diplomuarve dh
 
     </p>
 
+<!-- Validimi i email, try-catch -->
+
 <?php
 $email="";
 $emailErr="";
@@ -360,7 +362,7 @@ function phonenumber(phone) {
   </div>
   
   <div class="fotod">
-  <img src="icon_donate.png" class="rotate">
+  <img src="photos/icon_donate.png" class="rotate">
   </div>
 </div>
 </section>
@@ -382,13 +384,13 @@ function phonenumber(phone) {
 
 <div class="box"> 
 
-<img src="usaid.png">
+<img src="photos/usaid.png">
  
  </div>
  <footer> 
  <div class="siteFooterBar"> 
         <div class="content">
-            <img src="logo_alumni.png" >
+            <img src="photos/logo_alumni.png" >
                 <div class="foot">
                   2019 © All rights reserved
                 </div>
