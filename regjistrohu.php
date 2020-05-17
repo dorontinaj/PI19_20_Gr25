@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="css/regjistrohu.css" type="text/css">
  <!-- Insertimi i ikones(logos) ne title bar -->
-<link rel = "shortcut icon" type = "image/png" href = "llogoja.png">
+<link rel = "shortcut icon" type = "image/png" href = "photos/llogoja.png">
 <title>Regjistrohu</title>
 <style>
 .error {color: #ab0e18;}
