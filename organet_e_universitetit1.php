@@ -128,12 +128,14 @@ else if (hours > 18 || hours < 6){
 	<h4><b>Cilat gjuhë të huaja flisni?</b><h4>
 			
 			<form style="font-size:15px; color:#601A36">
+				
 			<input type="checkbox" name="text" value="Brenda shtetit">Shqip<br>
 			<input type="checkbox" name="text" value="Jashte shtetit">Anglisht<br>
 			<input type="checkbox" name="text" value="Brenda shtetit">Gjermanisht<br>
 			<input type="checkbox" name="text" value="Jashte shtetit">Frengjisht<br>
 			
-		</form>
+			</form>
+
 	<h4><b>Ku deshironi t'i vazhdoni studimet e larta?</b><h4>
 	<form style="font-size:15px; color:#601A36">
 			<input type="radio" name="text" value="Brenda shtetit">Brenda shtetit<br>
@@ -173,7 +175,7 @@ function drop(ev) {
 
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img src="photos/universiteti.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+  <img src="universiteti.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
 </div>
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 </div>
@@ -203,7 +205,7 @@ function drop(ev) {
 			<ul class="post">
 				<figure>
 				<div class="img1">
-					<a href="https://klankosova.tv/volejbollistet-e-up-se-fituese-te-universiades-se-dubrovnikut-ne-volejboll/"><img src="photos/volej1.jpg" style="width:155px;height:125px;" alt="Volejbollistet e UP-së, fituese të Universiadës së         Dubrovni..." /></a> 
+					<a href="https://klankosova.tv/volejbollistet-e-up-se-fituese-te-universiades-se-dubrovnikut-ne-volejboll/"><img src="volej1.jpg" style="width:155px;height:125px;" alt="Volejbollistet e UP-së, fituese të Universiadës së         Dubrovni..." /></a> 
 			     
 						
 				</div>
@@ -215,7 +217,7 @@ function drop(ev) {
 					</div>
 				<figure>
 				<div class="img2">
-					<a href="https://www.uni-pr.edu/page.aspx?id=2,4,984"><img src="photos/images1.jpg" style="width:155px;height:125px;" alt="UP-ja shpërblen me mirënjohje stafin dhe studentët që ndihm..." /></a>
+					<a href="https://www.uni-pr.edu/page.aspx?id=2,4,984"><img src="images1.jpg" style="width:155px;height:125px;" alt="UP-ja shpërblen me mirënjohje stafin dhe studentët që ndihm..." /></a>
 			    
 						
 				</div>
@@ -252,7 +254,6 @@ function drop(ev) {
 </table>
 </div>
  
-		
  <footer>
 <div id="footer">
 <nav id="mainFooter">
