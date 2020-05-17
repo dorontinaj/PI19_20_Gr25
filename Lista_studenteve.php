@@ -52,7 +52,7 @@
       <a href="fakultetet.php" >FAKULTETET</a>
       <a href="Lajme.php" >LAJME</a>
       <a href="alumni.php"  target="_blank">ALUMNI</a>
-      <a href="regjistrimi.php"  target="_blank">REGJISTROHU</a>
+      <a href="regjistrohu.php"  target="_blank">REGJISTROHU</a>
     </article>
   </nav>
   </div>
