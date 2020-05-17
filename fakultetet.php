@@ -5,7 +5,7 @@
 	 <meta name="viewport" content="width=device-width">
 	 <link rel="stylesheet" href="reset_P.css"/>
 	 <link rel="stylesheet" href="fakultetet.css"/>
-	  <link rel = "shortcut icon" type = "image/png" href = "llogoja.png">
+	  <link rel = "shortcut icon" type = "image/png" href = "photos/llogoja.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -72,12 +72,12 @@ display:none;
 </article>
 <article id="second2">
 		
-			<a href="projekti.html"  target="_blank">BALLINA</a>
-			<a href="organet_e_universitetit1.html"  target="_blank">ORGANET E UNIVERSITETIT</a>
-			<a href="faqja.html"  target="_blank">FAKULTETET</a>
-			<a href="Lajme.html"  target="_blank">LAJME</a>
-			<a href="alumni.html"  target="_blank">ALUMNI</a>
-	                <a href="regjistrimi.html"  target="_blank">REGJISTROHU</a>
+			<a href="Projekti.php"  target="_self">BALLINA</a>
+			<a href="organet_e_universitetit1.php"  target="_self">ORGANET E UNIVERSITETIT</a>
+			<a href="fakultetet.php"  target="_self">FAKULTETET</a>
+			<a href="Lajme.php"  target="_self">LAJME</a>
+			<a href="alumni.php"  target="_blank">ALUMNI</a>
+	                <a href="regjistrohu.php"  target="_self">REGJISTROHU</a>
 		</article>
 	</nav>
 	</div>
@@ -172,7 +172,15 @@ else if (hours > 18 || hours < 6){
 		</div>
 		</div>
 	</div>
+	<div id="Sugjerime">
 
+		<form name="form" action="shkruaj.php" method="post" >
+		Sugjero: <input type="text" name="sugj"/><br/>	   		   
+		<button><a type="submit" href="shkruaj.php">Dergo</a></button>
+		<button><a type="submit" href="lexo.php">Lexo sugjerimet e deritashme</a></button>
+		</form>
+
+	</div>
 	<table id="Statistika" width="100%" height="100%" cellpadding="10">
 	    <tr colspan="5">
 		<td>
@@ -182,45 +190,15 @@ else if (hours > 18 || hours < 6){
 		
 		</td>
 		<td>
-
-
-
-				<h3> 
-					<?php
-
-					$val = 13;
-    				printf("%f",$val);
-
-					?>
-				</h3>
-
-
-
+			
+				<h3> 13 </h3>
 				<h4> <mark>FAKULTETE</mark> </h4>
 			
 		</td>
 		<td>
 			
 				<h3> 900 </h3>
-
-
-
-				<h4> 
-					<mark>
-
-						<?php
-						
-							$fjalia = "PERSONEL AKADEMIK ";
-							echo substr($fjalia,6), "<br>";
-        					echo substr($fjalia,2,12);
-						?>
-
-					</mark>
-				</h4>
-
-
-
-
+				<h4> <mark>PERSONEL AKADEMIK </mark></h4>
 			
 		</td>
 		<td>
@@ -231,78 +209,8 @@ else if (hours > 18 || hours < 6){
 		</td>
     </tr>
     </table>
- 
- <footer>
-<div id="footer">
-
-<nav id="mainFooter">
-<div class="flip"><div class="flip1">Kliko per t'i pare informacionet rreth nesh</div></div>
-<div class="panel">
-	<table class="table2">
-<thead>
-	<tr>
-	<th width="280">TWITTER</th>	
-	<th width="280">INSTAGRAM</th>
-	<th width="280">FACEBOOK</th>
-    <th width="280">KONTAKTI</th>
-</tr>
-
-	</thead>
-
-<tbody>
-<tr>
-	<td>
-<ul style="list-style: none;">
-<li><a href="https://twitter.com/Rektorati">
-				 <span class="ikonat">
-					<i class="fab fa-twitter" style="font-size:40px;color:white" aria-hidden="true"></i>
-				</span> </a></li>
-</ul>
-</td>
-<td>
-<ul style="list-style: none;">
-<li><a href="https://www.instagram.com/p/BzOXH6FhTzR/">
-				 <span class="ikonat">
-					<i class="fab fa-instagram" style="font-size:40px;color:white" aria-hidden="true"></i>
-				</span> </a></li>
-</ul>
-</td>
-<td>
-<ul style="list-style: none;">
-<li><a href="https://www.facebook.com/UniversitetiPrishtines/">
-	<span class="ikonat"> <i class="fab fa-facebook-square" style="font-size:40px;color:white" aria-hidden="true"></i> 
-	</span></a></li>
-</ul>
-</td>
-<td>
-<ul style="list-style: none;">
-<li> <address>
-Adresa:
-Rr."George Bush",Nr.31, 10 000 Prishtine,
- 
-Republika e Kosoves<br> <br> 
-
-Phone: +381 38 244 183<br><br> 
-
-Fax: +381 38 244 187 <br><br> 
-
-Email: <a href="rektorati@uni-pr.edu">rektorati@uni-pr.edu</a><br> 
-
-
-</address> </li>
-
-</ul>
-</td>
-</tbody></table>
-</div>
-</nav>
-<nav id="secondaryFooter">
-	<div id="Copyright"><h6>
-Copyright &copy 2013-All Rights Reserved-Domain Name</h6>
-</div>
-</nav>
-</div>
-</footer>
-
+	<?php  
+     require('footer.php'); 
+     ?>
 	</body>
 	</html>
