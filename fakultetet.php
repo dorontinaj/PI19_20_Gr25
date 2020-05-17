@@ -3,8 +3,8 @@
 <head>
 	 <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width">
-	 <link rel="stylesheet" href="reset_P.css"/>
-	 <link rel="stylesheet" href="fakultetet.css"/>
+	 <link rel="stylesheet" href="css/reset_P.css"/>
+	 <link rel="stylesheet" href="css/fakultetet.css"/>
 	  <link rel = "shortcut icon" type = "image/png" href = "photos/llogoja.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -84,10 +84,18 @@ display:none;
 </header>
  <div id="ora" style="padding-left:10px;">
 	<script type="text/javascript">
-var now = new Date();
-var hours = now.getHours();
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
 
-document.write('Ora: ', hours);
+var now = new Date();
+var hours = addZero(now.getHours());
+var minutes = addZero(now.getMinutes());
+
+document.write('Ora: ', hours,':', minutes);
 document.bgColor="#2D3E45";
 //6-18 dite
 if (hours > 6 && hours < 18){
@@ -98,6 +106,7 @@ else if (hours > 18 || hours < 6){
  document.write ('<body style="background-color: #7D7D7D">');
 }
 </script></div>
+
 
 		<div class="First">
 		<div id="Fk" onclick="window.open('http://filozofiku.uni-pr.edu/','mywindow');" style="cursor: pointer;" onmouseover="this.style.background='lightgreen';" onmouseout="this.style.background='#D2D2D2';">&nbsp;
