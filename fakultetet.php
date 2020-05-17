@@ -72,30 +72,22 @@ display:none;
 </article>
 <article id="second2">
 		
-			<a href="Projekti.php"  target="_self">BALLINA</a>
-			<a href="organet_e_universitetit1.php"  target="_self">ORGANET E UNIVERSITETIT</a>
-			<a href="fakultetet.php"  target="_self">FAKULTETET</a>
-			<a href="Lajme.php"  target="_self">LAJME</a>
-			<a href="alumni.php"  target="_blank">ALUMNI</a>
-	                <a href="regjistrohu.php"  target="_self">REGJISTROHU</a>
+			<a href="projekti.html"  target="_blank">BALLINA</a>
+			<a href="organet_e_universitetit1.html"  target="_blank">ORGANET E UNIVERSITETIT</a>
+			<a href="faqja.html"  target="_blank">FAKULTETET</a>
+			<a href="Lajme.html"  target="_blank">LAJME</a>
+			<a href="alumni.html"  target="_blank">ALUMNI</a>
+	                <a href="regjistrimi.html"  target="_blank">REGJISTROHU</a>
 		</article>
 	</nav>
 	</div>
 </header>
  <div id="ora" style="padding-left:10px;">
 	<script type="text/javascript">
-function addZero(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
-}
-
 var now = new Date();
-var hours = addZero(now.getHours());
-var minutes = addZero(now.getMinutes());
+var hours = now.getHours();
 
-document.write('Ora: ', hours,':', minutes);
+document.write('Ora: ', hours);
 document.bgColor="#2D3E45";
 //6-18 dite
 if (hours > 6 && hours < 18){
@@ -180,16 +172,7 @@ else if (hours > 18 || hours < 6){
 		</div>
 		</div>
 	</div>
-	<div id="Kritikat">
 
-		<form name="form" action="shkruaj.php" method="post" >
-		<label>Hapësira për kritika:</label>
-		<textarea name="krit" rows="2" cols="42" placeholder="Shkruani kritikën tuaj..." required></textarea>		   
-		<button><a type="submit" >Dergo</a></button>
-		<button><a type="submit" href="lexo.php">Lexo kritikat paraprake</a></button>
-		</form>
-
-	</div>
 	<table id="Statistika" width="100%" height="100%" cellpadding="10">
 	    <tr colspan="5">
 		<td>
@@ -199,8 +182,20 @@ else if (hours > 18 || hours < 6){
 		
 		</td>
 		<td>
-			
-				<h3> 13 </h3>
+
+
+
+				<h3> 
+					<?php
+
+					$val = 13;
+    				printf("%f",$val);
+
+					?>
+				</h3>
+
+
+
 				<h4> <mark>FAKULTETE</mark> </h4>
 			
 		</td>
