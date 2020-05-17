@@ -66,7 +66,7 @@ if(empty($nameErr) && empty($emailErr) && empty($passwordErr)) {
   //--------------------------------------------------------------------------------------//
   //Database
   //Krijimi i lidhjes
-  $con = mysqli_connect('localhost','root','Eliraa323311-');
+  $con = mysqli_connect('localhost','root','');
   if(!$con)
   {
       echo 'Nuk jeni lidhur me serverin!';
