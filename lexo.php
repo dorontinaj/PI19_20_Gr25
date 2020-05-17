@@ -63,6 +63,8 @@ $(document).ready(function(){
   </nav>
   </div>
 </header>
+<div id="KP">
+<h2>Kritikat paraprake:</h2>
 <?php
 				$current = fopen("./newfile.txt", "r") or die("Unable to open file!");
 				$read= fread($current,filesize("newfile.txt"));
@@ -72,3 +74,4 @@ $(document).ready(function(){
 				}
 				fclose($current);
 ?>
+</div>
