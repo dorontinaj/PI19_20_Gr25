@@ -74,10 +74,18 @@
 </header>
  <div id="ora" style="padding-left:10px;">
 	<script type="text/javascript">
-var now = new Date();
-var hours = now.getHours();
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
 
-document.write('Ora: ', hours);
+var now = new Date();
+var hours = addZero(now.getHours());
+var minutes = addZero(now.getMinutes());
+
+document.write('Ora: ', hours,':', minutes);
 document.bgColor="#2D3E45";
 //6-18 dite
 if (hours > 6 && hours < 18){
