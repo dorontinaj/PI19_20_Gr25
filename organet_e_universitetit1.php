@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 	<title>Organet e Universitetit</title>
-	<link rel="stylesheet"  href="organet_e_universitetit1.css"/>
+	<link rel="stylesheet"  href="css/organet_e_universitetit1.css"/>
 	<link rel = "shortcut icon" type = "image/png" href = "llogoja.png.png"/>
 	<link rel="stylesheet" href="reset_P.css"/>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
