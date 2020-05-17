@@ -63,11 +63,11 @@ $(document).ready(function(){
   </nav>
   </div>
 </header>
-<div id="KP">
+<div class="pjesaKryesore">
 <h2>Kritikat paraprake:</h2>
 <?php
-				$current = fopen("./newfile.txt", "r") or die("Unable to open file!");
-				$read= fread($current,filesize("newfile.txt"));
+				$current = fopen("./filePerKritika.txt", "r") or die("Unable to open file!");
+				$read= fread($current,filesize("filePerKritika.txt"));
 				$lines=explode("\n", $read);
 				foreach($lines as $newline){
 					echo $newline . '<br>';
