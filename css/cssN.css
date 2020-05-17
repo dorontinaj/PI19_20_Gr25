@@ -369,3 +369,14 @@ address {
 }
 /*  } Fundi i Stilizimit te Footerit   */
 
+div#ora
+ {
+ height:35px;
+ width:140px;
+ font-size:27px;
+ box-shadow:1px 5px 10px black;
+ margin-left:1%;
+ color:black;
+ border-radius:20px;
+ }
+ /* Fundi i stilizimit te ores */
