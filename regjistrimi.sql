@@ -31,7 +31,8 @@ CREATE TABLE perdoruesit (
   id int(11) NOT NULL,
   username varchar(255) NOT NULL,
   email varchar(255) NOT NULL,
-  password varchar(255) NOT NULL
+  password varchar(255) NOT NULL,
+  salt varchar(50)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -66,4 +67,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+select* from perdoruesit;
 
