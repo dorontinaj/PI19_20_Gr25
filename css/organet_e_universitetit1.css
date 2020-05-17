@@ -635,13 +635,14 @@ tbody
 div#ora
  {
  height:35px;
- width:115px;
+ width:150px;
  font-size:27px;
  box-shadow:1px 5px 10px black;
- margin-left:2%;
+ margin-left:1%;
  color:black;
  border-radius:20px;
  }
+ /* Fundi i stilizimit te ores */
 
  #div1, #div2 {
   float: left;
