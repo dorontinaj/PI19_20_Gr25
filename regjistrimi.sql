@@ -1,4 +1,6 @@
-phpMyAdmin SQL Dump
+create database regjistrimi;
+use regjistrimi;
+
 -- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
