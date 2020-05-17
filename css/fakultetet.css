@@ -290,6 +290,7 @@ margin-bottom:0%;
 	margin-right:20px;
 }
 /*  } Fundi i Stilizimit te Footerit   */
+/* Fillimi i stilizimit te ores */
 div#ora
  {
  height:35px;
@@ -301,3 +302,14 @@ div#ora
  border-radius:20px;
  }
  /* Fundi i stilizimit te ores */
+ /* Stilizimi i formes per kritika */
+ div#Kritikat
+ {
+ height:100px;
+ width:350px;
+ position: static;
+ font-size:15px;
+ box-shadow:1px 5px 10px lightblue;
+ margin-left:1%;
+ color:white;
+ }
