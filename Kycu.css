@@ -1,14 +1,12 @@
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
-body
-{
+body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url(Fotot/bg.jpg) no-repeat;
-  background-size:cover;
+  background-color: #909090;
+  background-size: cover;
   height: 100%;
 }
-
 .login-box{
   width: 280px;
   position: absolute;
@@ -17,17 +15,14 @@ body
   transform: translate(-50%,-50%);
   color: white;
 }
-.login-box h1
-{
+.login-box h1{
   float: left;
   font-size: 40px;
   border-bottom: 6px solid #FF6F61;
   margin-bottom: 50px;
   padding: 13px 0;
 }
-
-.textbox
-{
+.textbox{
   width: 100%;
   overflow: hidden;
   font-size: 20px;
@@ -35,16 +30,12 @@ body
   margin: 8px 0;
   border-bottom: 1px solid #F5D6C6;
 }
-
-.textbox i
-{
+.textbox i{
   width: 26px;
   float: left;
   text-align: center;
 }
-
-.textbox input
-{
+.textbox input{
   border: none;
   outline: none;
   background: none;
@@ -54,9 +45,7 @@ body
   float: left;
   margin: 0 10px;
 }
-
-.btn
-{
+.btn{
   width: 100%;
   background: none;
   border: 2px solid white;
@@ -66,9 +55,7 @@ body
   cursor: pointer;
   margin: 12px 0;
 }
-
-a
-{
+a{
   text-decoration: none;
   color: #fff;
   font-family: "montserrat",sans-serif;
@@ -77,14 +64,6 @@ a
   transition: 0.8s;
   display: block;
 }
-
-a:hover
-{
+a:hover{
   background: rgba(0,0,0,.3);
 }
-
-
-
-
-
-
