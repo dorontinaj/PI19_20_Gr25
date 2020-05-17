@@ -144,12 +144,14 @@ else if (hours > 18 || hours < 6){
 			<input type="checkbox" name="text" value="Jashte shtetit">Frengjisht<br>
 			
 		</form>
-	<h4><b>Ku deshironi t'i vazhdoni studimet e larta?</b><h4>
-	<form style="font-size:15px; color:#601A36">
-			<input type="radio" name="text" value="Brenda shtetit">Brenda shtetit<br>
-			<input type="radio" name="text" value="Jashte shtetit">Jashtë Shtetit<br>
-			<input type=reset value="VOTO"  onClick="alert('Vota juaj &#235sht&#235 ruajtur!')" 
-			style="height:30px; width:65px; border-radius:10px; background:#601A36; color:white; font-weight:bold;font-size:12pt; font-family:Arial"  >  
+
+	<?php
+    echo "<h4>Funksioni explode:</h4>";
+    $njeString="Studentja e universitetit te Prishtines krijon ekspozite ne karantine.";
+    print_r(explode(" ",$njeString));
+    $stringTjeter=(explode(" ",$njeString));
+    echo "<br>";
+    
 <div class="drag">
 <script>
 function allowDrop(ev) {
@@ -166,14 +168,10 @@ function drop(ev) {
 </script>
 </head>
 <body>
-
-      
-
 <p>
-	<?php
-
-		$fjalia =  "Lëviz foton në mes të dy div elementeve.";
-		echo $fjalia, "<br>";
+<?php
+	$fjalia =  "Lëviz foton në mes të dy div elementeve.";
+	echo $fjalia, "<br>";
         $zv = str_replace('dy','tre',$fjalia);
         print_r($zv);
 
