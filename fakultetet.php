@@ -187,15 +187,20 @@ else if (hours > 18 || hours < 6){
 		<label>Hapësira për kritika:</label>
 		<textarea name="krit" rows="2" cols="42" placeholder="Shkruani kritikën tuaj..." required></textarea>		   
 		<button><a type="submit" >Dergo</a></button>
-		<button><a type="submit" href="lexo.php">Lexo kritikat paraprake</a></button>
+		<button><a type="submit" id="linku" href="lexo.php">Lexo kritikat paraprake</a></button>
 		</form>
 <?php
 
  				$myfile = fopen("./filePerKritika.txt", "a") or die("Unable to open file!");
+				if(isset($_POST['krit'])==1){
 				$txt = htmlspecialchars($_POST['krit'], ENT_QUOTES, 'UTF-8');
 				$txtt = $txt . PHP_EOL;
 				fwrite($myfile, $txtt);
 				fclose($myfile);
+				}
+				else{
+					echo "";
+				}
 				
 ?>
 	</div>
@@ -209,7 +214,14 @@ else if (hours > 18 || hours < 6){
 		</td>
 		<td>
 			
-				<h3> 13 </h3>
+				<h3> 
+			         <?php
+
+					$val = 13;
+    				printf("%.2f",$val);
+
+				 ?>
+			        </h3>
 				<h4> <mark>FAKULTETE</mark> </h4>
 			
 		</td>
