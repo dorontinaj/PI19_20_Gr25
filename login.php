@@ -12,6 +12,12 @@ if (isset($_POST['submit'])) {
         $query = "SELECT username, password FROM perdoruesit WHERE username=? AND password=? LIMIT 1";
         // Mbrojtja ndaj MySQL injections
         $s = $connect->prepare($query);
+        $salt = "SELECT salt FROM perdoruesit WHERE username = '$username'";
+        $result = mysqli_query($connect,$salt);
+        if($row = mysqli_fetch_assoc($result)){
+              $salti = $row['salt'];
+         }
+        $password = MD5($password.$salti);
         $s->bind_param("ss", $username, $password);
         $s->execute();
         $s->bind_result($username, $password);
