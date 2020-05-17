@@ -9,7 +9,7 @@ if(isset($_SESSION['login_user'])){
   <head>
     <meta charset="utf-8">
     <title>Ky&ccedil;u</title>
-    <link rel="stylesheet" href="Kycu.css">
+    <link rel="stylesheet" href="css/Kycu.css">
   </head>
   <body>
 <form class="login-box" action="" method="POST">
