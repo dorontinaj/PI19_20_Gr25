@@ -185,7 +185,7 @@ else if (hours > 18 || hours < 6){
 		</div>	
 		<div id="Lajmi1">
 			<figure>
-			<video width="90%" height="35%" controls>
+			<video width="300px" height="200px" controls>
   <source src="photos/video.mp4" type="video/mp4">
  
 </video>
