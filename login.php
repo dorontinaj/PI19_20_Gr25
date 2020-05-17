@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     else {
         $username = $_POST['username'];
         $password = $_POST['pass'];
-        $connect = mysqli_connect("localhost", "root", "Elira123-", "regjistrimi");
+        $connect = mysqli_connect("localhost", "root", "", "regjistrimi");
         $query = "SELECT username, password FROM perdoruesit WHERE username=? AND password=? LIMIT 1";
         // Mbrojtja ndaj MySQL injections
         $s = $connect->prepare($query);
