@@ -3,11 +3,11 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width">
-      <title>Lajmet</title>           
-   <link rel="stylesheet" href="reset_P.css"/>
-   <link rel="stylesheet" href="Lista.css"/>
-  <link rel = "shortcut icon" type = "image/png" href = "llogoja.png">
-  <title>Lajmet</title>
+      <title>Lista e Studenteve</title>           
+   <link rel="stylesheet" href="css/reset_P.css"/>
+   <link rel="stylesheet" href="css/Lista.css"/>
+  <link rel = "shortcut icon" type = "image/png" href = "photos/llogoja.png">
+  
      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
