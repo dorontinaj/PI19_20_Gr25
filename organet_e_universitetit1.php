@@ -6,7 +6,7 @@
 	<title>Organet e Universitetit</title>
 	<link rel="stylesheet"  href="css/organet_e_universitetit1.css"/>
 	<link rel = "shortcut icon" type = "image/png" href = "photos/llogoja.png"/>
-	<link rel="stylesheet" href="reset_P.css"/>
+	<link rel="stylesheet" href="css/reset_P.css"/>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
          <script src="jquery-1.11.2.min.js"></script>
