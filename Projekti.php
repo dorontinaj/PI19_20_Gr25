@@ -67,7 +67,7 @@ function initMap() {
 <header><div id="header">
 <nav id="mainMenu">
          <div><ol>
-           <li><p>Tel: +381 38 244 183 | Mail: <a href="rektorati@uni-pr.edu">rektorati@uni-pr.edu</a>
+           <li><p>Tel: +381 38 244 183 | <a href="Mail.php">Click here to send an email</a>
 		</p>
        	 </li>
 		   </ol></div>
