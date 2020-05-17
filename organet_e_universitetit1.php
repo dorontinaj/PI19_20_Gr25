@@ -173,7 +173,7 @@ function drop(ev) {
 
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img src="universiteti.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+  <img src="photos/universiteti.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
 </div>
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 </div>
@@ -203,7 +203,7 @@ function drop(ev) {
 			<ul class="post">
 				<figure>
 				<div class="img1">
-					<a href="https://klankosova.tv/volejbollistet-e-up-se-fituese-te-universiades-se-dubrovnikut-ne-volejboll/"><img src="volej1.jpg" style="width:155px;height:125px;" alt="Volejbollistet e UP-së, fituese të Universiadës së         Dubrovni..." /></a> 
+					<a href="https://klankosova.tv/volejbollistet-e-up-se-fituese-te-universiades-se-dubrovnikut-ne-volejboll/"><img src="photos/volej1.jpg" style="width:155px;height:125px;" alt="Volejbollistet e UP-së, fituese të Universiadës së         Dubrovni..." /></a> 
 			     
 						
 				</div>
@@ -215,7 +215,7 @@ function drop(ev) {
 					</div>
 				<figure>
 				<div class="img2">
-					<a href="https://www.uni-pr.edu/page.aspx?id=2,4,984"><img src="images1.jpg" style="width:155px;height:125px;" alt="UP-ja shpërblen me mirënjohje stafin dhe studentët që ndihm..." /></a>
+					<a href="https://www.uni-pr.edu/page.aspx?id=2,4,984"><img src="photos/images1.jpg" style="width:155px;height:125px;" alt="UP-ja shpërblen me mirënjohje stafin dhe studentët që ndihm..." /></a>
 			    
 						
 				</div>
@@ -251,8 +251,69 @@ function drop(ev) {
 </tr>
 </table>
 </div>
-<?php  
-require('footer.php');
-?>
+ 
+		
+ <footer>
+<div id="footer">
+<nav id="mainFooter">
+<div class="flip"><div class="flip1">Kliko per t'i pare informacionet rreth nesh</div></div>
+<div class="panel">
+	<table class="table2">
+<thead>
+	<tr>
+	<th width="280">TWITTER</th>	
+	<th width="280">INSTAGRAM</th>
+	<th width="280">FACEBOOK</th>
+    <th width="280">KONTAKTI</th>
+</tr>
+	</thead>
+<tbody>
+<tr>
+	<td>
+<ul style="list-style: none;">
+<li><a href="https://twitter.com/Rektorati">
+				 <span class="ikonat">
+					<i class="fab fa-twitter" style="font-size:40px;color:white" aria-hidden="true"></i>
+				</span> </a></li>
+</ul>
+</td>
+<td>
+<ul style="list-style: none;">
+<li><a href="https://www.instagram.com/p/BzOXH6FhTzR/">
+				 <span class="ikonat">
+					<i class="fab fa-instagram" style="font-size:40px;color:white" aria-hidden="true"></i>
+				</span> </a></li>
+</ul>
+</td>
+<td>
+<ul style="list-style: none;">
+<li><a href="https://www.facebook.com/UniversitetiPrishtines/">
+	<span class="ikonat"> <i class="fab fa-facebook-square" style="font-size:40px;color:white" aria-hidden="true"></i> 
+	</span></a></li>
+</ul>
+</td>
+<td>
+<ul style="list-style: none;">
+<li> 
+<address>
+Adresa: Rr."George Bush",Nr.31, 10 000 Prishtine 
+Republika e Kosoves<br>
+Phone: +381 38 244 183<br>
+Fax: +381 38 244 187 <br>
+Email: <a class="a" href="rektorati@uni-pr.edu">rektorati@uni-pr.edu</a><br> 
+</address> 
+</li>
+</ul>
+</td>
+</tbody></table>
+</div>
+</nav>
+<nav id="secondaryFooter">
+	<div id="Copyright"><h6>
+Copyright &copy 2013-All Rights Reserved-Domain Name</h6>
+</div>
+</nav>
+</div>
+</footer>
 </body>
 </html>
