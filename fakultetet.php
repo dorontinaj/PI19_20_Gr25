@@ -181,14 +181,23 @@ else if (hours > 18 || hours < 6){
 		</div>
 		</div>
 	</div>
-	<div id="Sugjerime">
+	<div id="Kritikat">
 
-		<form name="form" action="shkruaj.php" method="post" >
-		Sugjero: <input type="text" name="sugj"/><br/>	   		   
-		<button><a type="submit" href="shkruaj.php">Dergo</a></button>
-		<button><a type="submit" href="lexo.php">Lexo sugjerimet e deritashme</a></button>
+		<form name="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
+		<label>Hapësira për kritika:</label>
+		<textarea name="krit" rows="2" cols="42" placeholder="Shkruani kritikën tuaj..." required></textarea>		   
+		<button><a type="submit" >Dergo</a></button>
+		<button><a type="submit" href="lexo.php">Lexo kritikat paraprake</a></button>
 		</form>
+<?php
 
+ 				$myfile = fopen("./newfile.txt", "a") or die("Unable to open file!");
+				$txt = htmlspecialchars($_POST['krit'], ENT_QUOTES, 'UTF-8');
+				$txtt = $txt . PHP_EOL;
+				fwrite($myfile, $txtt);
+				fclose($myfile);
+				
+?>
 	</div>
 	<table id="Statistika" width="100%" height="100%" cellpadding="10">
 	    <tr colspan="5">
