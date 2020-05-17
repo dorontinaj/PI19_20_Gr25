@@ -191,7 +191,7 @@ else if (hours > 18 || hours < 6){
 		</form>
 <?php
 
- 				$myfile = fopen("./newfile.txt", "a") or die("Unable to open file!");
+ 				$myfile = fopen("./filePerKritika.txt", "a") or die("Unable to open file!");
 				$txt = htmlspecialchars($_POST['krit'], ENT_QUOTES, 'UTF-8');
 				$txtt = $txt . PHP_EOL;
 				fwrite($myfile, $txtt);
