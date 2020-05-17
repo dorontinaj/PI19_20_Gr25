@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost", "root", "Eliraa323311-", "regjistrimi");
+$connect = mysqli_connect("localhost", "root", "", "regjistrimi");
 session_start();
 //Ruajtja e sesionit
 $shiko_perdoruesin = $_SESSION['login_user'];
