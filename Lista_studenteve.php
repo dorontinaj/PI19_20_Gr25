@@ -47,10 +47,10 @@
 </article>
 <article id="second2">
     
-      <a href="projekti.php"  target="_blank">BALLINA</a>
-      <a href="organet_e_universitetit1.php"  target="_blank">ORGANET E UNIVERSITETIT</a>
-      <a href="fakultetet.php"  target="_blank">FAKULTETET</a>
-      <a href="Lajme.php"  target="_blank">LAJME</a>
+      <a href="projekti.php"  >BALLINA</a>
+      <a href="organet_e_universitetit1.php" >ORGANET E UNIVERSITETIT</a>
+      <a href="fakultetet.php" >FAKULTETET</a>
+      <a href="Lajme.php" >LAJME</a>
       <a href="alumni.php"  target="_blank">ALUMNI</a>
       <a href="regjistrimi.php"  target="_blank">REGJISTROHU</a>
     </article>
