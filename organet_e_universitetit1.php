@@ -151,7 +151,11 @@ else if (hours > 18 || hours < 6){
     print_r(explode(" ",$njeString));
     $stringTjeter=(explode(" ",$njeString));
     echo "<br>";
-    
+    echo "<h4>Funksioni implode:</h4>";
+    echo implode(" ",$stringTjeter);
+  	?>  
+  	<p><a href="https://www.uni-pr.edu/page.aspx?id=1,4,1114" style="text-decoration: none; ">Kliko ketu per ta pare kete ekspozite.</a></p>
+
 <div class="drag">
 <script>
 function allowDrop(ev) {
@@ -168,10 +172,14 @@ function drop(ev) {
 </script>
 </head>
 <body>
+
+      
+
 <p>
-<?php
-	$fjalia =  "Lëviz foton në mes të dy div elementeve.";
-	echo $fjalia, "<br>";
+	<?php
+
+		$fjalia =  "Lëviz foton në mes të dy div elementeve.";
+		echo $fjalia, "<br>";
         $zv = str_replace('dy','tre',$fjalia);
         print_r($zv);
 
