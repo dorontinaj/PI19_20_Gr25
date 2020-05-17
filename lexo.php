@@ -75,3 +75,21 @@ $(document).ready(function(){
 				fclose($current);
 ?>
 </div>
+ <footer>
+<div id="footer">
+
+<nav id="mainFooter">
+<div class="flip"><div class="flip1">Kliko per t'i pare informacionet rreth nesh</div></div>
+<div class="panel">
+  <table class="table2">
+<thead>
+  <tr>
+  <th width="280">TWITTER</th>  
+  <th width="280">INSTAGRAM</th>
+  <th width="280">FACEBOOK</th>
+    <th width="280">KONTAKTI</th>
+</tr>
+
+  </thead>
+
+<tbody>
