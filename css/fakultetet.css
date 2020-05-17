@@ -313,3 +313,12 @@ div#ora
  margin-left:1%;
  color:white;
  }
+#linku
+{
+ color:black;
+ text-decoration: none;
+} 
+#linku : hover
+{
+ color: #98A9B0;
+}
