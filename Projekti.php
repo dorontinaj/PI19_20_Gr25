@@ -8,8 +8,8 @@
 
 	 <title>Universiteti</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	 <link rel="stylesheet" href="reset_P.css"/>
-     <link rel="stylesheet" href="stilizimiP.css"/>
+	 <link rel="stylesheet" href="css/reset_P.css"/>
+     <link rel="stylesheet" href="css/stilizimiP.css"/>
 	 	 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
          <script src="jquery-1.11.2.min.js"></script>
@@ -88,12 +88,12 @@ function initMap() {
 	</article>
 	<article id="second2">
      
-	               <a href="projekti.php"  target="_blank">BALLINA</a>
-			<a href="organet_e_universitetit1.php"  target="_blank">ORGANET E UNIVERSITETIT</a>
-			<a href="fakultetet.php"  target="_blank">FAKULTETET</a>
-			<a href="Lajme.php"  target="_blank">LAJME</a>
+	               <a href="projekti.php">BALLINA</a>
+			<a href="organet_e_universitetit1.php">ORGANET E UNIVERSITETIT</a>
+			<a href="fakultetet.php">FAKULTETET</a>
+			<a href="Lajme.php">LAJME</a>
 			<a href="alumni.php"  target="_blank">ALUMNI</a>
-	          	<a href="regjistrohu1.php"  target="_blank">REGJISTROHU</a>
+	          	<a href="regjistrohu.php"  target="_blank">REGJISTROHU</a>
 	
 		   </article>
       </nav>
@@ -110,7 +110,7 @@ function initMap() {
 		   <button id="readmore"><a href="https://sq.wikipedia.org/wiki/Universiteti_i_Prishtin%C3%ABs">Lexo me shume</a></button>
 		   </div>
 		   <div class="footerfig">
-		   <article><h2>new 1 </h2>
+		   <article><h2><a href="Lista_studenteve.php" style="text-decoration:none;">Lista e Studenteve </a> </h2>
 		   </article>
 		   <article>
 		   <h2>new 2 </h2>
@@ -236,7 +236,10 @@ function initMap() {
 <?php
 require('footer.php');
 ?>
+  
+	  
 </div>
+		 	  
 </div>
 </body>
 
