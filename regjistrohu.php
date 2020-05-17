@@ -78,12 +78,15 @@ if(empty($nameErr) && empty($emailErr) && empty($passwordErr)) {
   $Emri = $_POST['username'];
   $Email = $_POST['email'];
   $Fjalekalimi = $_POST['password'];
-  //Krijimi i Databazes
+   //Krijimi i Databazes
   $sql='CREATE DATABASE regjistrimi';
   //Krijimi i Tabeles
-  $sql='CREATE TABLE users(id INT(11)UNSIGNED AUTO_INCREMENT PRIMARY KEY,username VARCHAR(255) , UNIQUE(email) VARCHAR(255) ,password VARCHAR(255));';
+  $sql='CREATE TABLE users(id INT(11)UNSIGNED AUTO_INCREMENT PRIMARY KEY,username VARCHAR(255) , UNIQUE(email) VARCHAR(255) ,password VARCHAR(255),salt VARCHAR(255));';
   //INSERTIMET
-  $sql = "INSERT INTO perdoruesit (username,email,password) VALUES ('$Emri','$Email','$Fjalekalimi')";
+  $salti = random_bytes(12);
+  $salti = base64_encode($salti);
+  $sql = "INSERT INTO perdoruesit (username,email,password,salt) VALUES ('$Emri','$Email',MD5('$Fjalekalimi$salti'),'$salti')";
+
   $rez = mysqli_query($con,$sql);
   //UPDATE
   if(!$rez){
