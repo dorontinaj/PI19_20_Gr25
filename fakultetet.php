@@ -202,7 +202,25 @@ else if (hours > 18 || hours < 6){
 		<td>
 			
 				<h3> 900 </h3>
-				<h4> <mark>PERSONEL AKADEMIK </mark></h4>
+
+
+
+				<h4> 
+					<mark>
+
+						<?php
+						
+							$fjalia = "PERSONEL AKADEMIK ";
+							echo substr($fjalia,6), "<br>";
+        					echo substr($fjalia,2,12);
+						?>
+
+					</mark>
+				</h4>
+
+
+
+
 			
 		</td>
 		<td>
