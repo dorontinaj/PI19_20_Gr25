@@ -21,6 +21,48 @@ $(document).ready(function(){
 </script>
 
 <script> 
+	$(document).ready(function(){
+        $(".flip").click(function(){
+            $(".panel").animate({
+                height: "toggle"
+            });
+        });
+    });
+
+    </script>
+</head>
+<body>
+<header> <div id="header">
+  <nav id="mainMenu">
+     <div><ol>
+        
+           <li><p>Tel: +381 38 244 183 | Mail: <a href="rektorati@uni-pr.edu">rektorati@uni-pr.edu</a></p> </li> </ol> </div>
+           
+             <div class="search-container">
+              <form class="example" action="/action_page.php">
+               <input type="text" placeholder="Kerkoni ketu..." name="search">
+              </form>
+             </div>  
+      </nav>   
+  <nav id="secondaryMenu">
+ <article id="second1">
+ <div id="second1">
+      <h1> <span>Universiteti</span></h1> <br>
+     <h2>Fakultetet</h2>
+  </div>
+</article>
+<article id="second2">
+    
+			<a href="Projekti.php"  target="_self">BALLINA</a>
+			<a href="organet_e_universitetit1.php"  target="_self">ORGANET E UNIVERSITETIT</a>
+			<a href="fakultetet.php"  target="_self">FAKULTETET</a>
+			<a href="Lajme.php"  target="_self">LAJME</a>
+			<a href="alumni.php"  target="_blank">ALUMNI</a>
+	        <a href="regjistrohu.php"  target="_self">REGJISTROHU</a>
+    </article>
+  </nav>
+  </div>
+</header>
 <?php
 				$current = fopen("./newfile.txt", "r") or die("Unable to open file!");
 				$read= fread($current,filesize("newfile.txt"));
