@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	 <link rel="stylesheet" href="css/reset_P.css"/>
      <link rel="stylesheet" href="css/stilizimiP.css"/>
+     <link rel = "shortcut icon" type = "image/png" href = "photos/llogoja.png">
 	 	 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
          <script src="jquery-1.11.2.min.js"></script>
@@ -113,10 +114,10 @@ function initMap() {
 		   <article><h2><a href="Lista_studenteve.php" style="text-decoration:none;">Lista e Studenteve </a> </h2>
 		   </article>
 		   <article>
-		   <h2>new 2 </h2>
+		   <h2><a href="Kycu.php" style="text-decoration:none;">Kycu ne Alumni </a></h2>
 		   </article>
 		   <article>
-		   <h2>new 3 </h2>
+		   <h2><a href="lexo.php" style="text-decoration:none;">Lexo Kritikat </a></h2>
 		   </article>
 		   </div>
 		   
