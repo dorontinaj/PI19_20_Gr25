@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width">
 	<title>Organet e Universitetit</title>
 	<link rel="stylesheet"  href="css/organet_e_universitetit1.css"/>
-	<link rel = "shortcut icon" type = "image/png" href = "llogoja.png.png"/>
+	<link rel = "shortcut icon" type = "image/png" href = "photos/llogoja.png"/>
 	<link rel="stylesheet" href="reset_P.css"/>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -46,21 +46,30 @@
   </div>
 </article>
 <article id="second2">
-			<a class="a" href="projekti.html"  target="_blank">BALLINA</a>
-			<a class="a" href="organet_e_universitetit1.html"  target="_blank">ORGANET E UNIVERSITETIT</a>
-			<a class="a" href="faqja.html"  target="_blank">FAKULTETET</a>
-			<a class="a" href="Lajme.html"  target="_blank">LAJME</a>
-			<a class="a" href="alumni.html"  target="_blank">ALUMNI</a>
-			<a class="a" href="regjistrimi.html"  target="_blank">REGJISTROHU</a>
+			<a class="a" href="Projekti.php">BALLINA</a>
+			<a class="a" href="organet_e_universitetit1.php">ORGANET E UNIVERSITETIT</a>
+			<a class="a" href="fakultetet.php">FAKULTETET</a>
+			<a class="a" href="Lajme.php">LAJME</a>
+			<a class="a" href="alumni.php">ALUMNI</a>
+			<a class="a" href="regjistrohu.php">REGJISTROHU</a>
 		</article>
 	</nav>
 	</div>
 </header>
 	<div id="ora" style="padding-left:10px;">
 	<script type="text/javascript">
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
 var now = new Date();
-var hours = now.getHours();
-document.write('Ora: ', hours);
+var hours = addZero(now.getHours());
+var minutes = addZero(now.getMinutes());
+
+document.write('Ora: ', hours,':', minutes);
 document.bgColor="#2D3E45";
 //6-18 dite
 if (hours > 6 && hours < 18){
@@ -71,6 +80,7 @@ else if (hours > 18 || hours < 6){
  document.write ('<body style="background-color: #7D7D7D">');
 }
 </script></div>
+
 <section>
 	<div class="header_1">
 		<div class="heading_1">
