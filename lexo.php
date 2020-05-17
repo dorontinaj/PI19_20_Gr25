@@ -3,7 +3,7 @@
 <head>
 	 <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width">
-	 <link rel="stylesheet" href="reset_P.css"/>
+	 <link rel="stylesheet" href="css/reset_P.css"/>
 	 <link rel="stylesheet" href="css/Lista.css"/>
 	  <link rel = "shortcut icon" type = "image/png" href = "photos/llogoja.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -58,7 +58,7 @@ $(document).ready(function(){
 			<a href="fakultetet.php"  target="_self">FAKULTETET</a>
 			<a href="Lajme.php"  target="_self">LAJME</a>
 			<a href="alumni.php"  target="_blank">ALUMNI</a>
-	        <a href="regjistrohu.php"  target="_self">REGJISTROHU</a>
+	                <a href="regjistrohu.php"  target="_self">REGJISTROHU</a>
     </article>
   </nav>
   </div>
