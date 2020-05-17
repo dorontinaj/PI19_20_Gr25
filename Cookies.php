@@ -23,3 +23,4 @@ if(count($_COOKIE) > 0) {
 } else {
     echo "Cookies jane deaktivizuar.";
 }
+?>
